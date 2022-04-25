@@ -8,7 +8,7 @@
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b101dc44ce.js" crossorigin="anonymous"></script>
     <!--JQUery-->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -100,7 +100,7 @@
             <ul class="navbar-nav flex-row">
                 <!--Carrito-->
                 <li class="nav-item me-3 me-lg-1 mx-2">
-                    <a class="nav-link">
+                    <a class="nav-link" href="#">
                         <i class="fas fa-solid fa-cart-shopping fa-lg"></i>
             
                         <span class="badge rounded-pill badge-notification bg-danger">0</span>
@@ -131,30 +131,21 @@
                             Usuario
                         </strong>
                     </a>
-                    <ul class="dropdown-menu dropdown-menu-end"
+                    <ul class="dropdown-menu dropdown-menu-end fs-13"
                         aria-labelledby="navbarDropdownMenuLink">
                         <li>
                         <a class="dropdown-item" href="#">Editar información</a>
                         </li>
                         <li>
-                        <a class="dropdown-item" href="#">Administrar método de pago</a>
-                        </li>
-                        <li>
                             <hr class="dropdown-divider" />
                         </li>
                         <li>
-                            <a class="dropdown-item text-danger" href="#">Cerrar sesión</a>
+                            <a class="dropdown-item text-redtele" href="#">Cerrar sesión</a>
                         </li>
                     </ul>
                 </li>
 
             </ul>
-        <!-- Right elements -->
-        </div>  
-    
-    
-        
-        </div>
     </nav>
     <!-- Fin de Navbar -->
 
@@ -355,38 +346,26 @@
                                 </div>
 
                                 <!--Lista de funciones-->
-                                <ul class="list-unstyled fw-bold ">
-                                    <li class="p-2 mb-1 bg-lightgrey">
-                                        <div class="row px-3">
-                                            Sala 1 - 11:00 AM
+                                <div class="p-2 mb-1 bg-lightgrey">
+                                    <div class="d-flex">
+                                        <div class="m-1">
+                                            <button class="btn btn-redtele" type="button" 
+                                                data-mdb-toggle="modal" data-mdb-target="#compraModal"
+                                                data-sede="Sede San Borja" data-fname="11:00" data-price="50.00" data-max="4" 
+                                                id="12" onclick="setFuncion(id)">
+                                                    11:00
+                                            </button>
                                         </div>
-                                        <div class= "row px-3 align-items-center justify-content-between">
-                                            <div class="col text-start p-0">
-                                                S/ 60.00
-                                            </div>
-                                            <div class="col-auto text-end">
-                                                <button class="btn btn-redtele">
-                                                    Comprar
-                                                </button>
-                                            </div>
+                                        <div class="m-1">
+                                            <button class="btn btn-redtele" type="button" 
+                                            data-mdb-toggle="modal" data-mdb-target="#compraModal"
+                                            data-sede="Sede San Borja" data-fname="16:00" data-price="60.00" data-max="5" 
+                                            id="13" onclick="setFuncion(id)">
+                                                16:00
+                                            </button>
                                         </div>
-                                    </li>
-                                    <li class="p-2 mb-1 bg-lightgrey">
-                                        <div class="row px-3">
-                                            Sala 4 - 4:00 PM
-                                        </div>
-                                        <div class= "row px-3 align-items-center justify-content-between">
-                                            <div class="col text-start p-0">
-                                                S/ 70.00
-                                            </div>
-                                            <div class="col-auto text-end">
-                                                <button class="btn btn-redtele">
-                                                    Comprar
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                    </div>
+                                </div>
                             </div>
                             
 
@@ -400,30 +379,22 @@
                                 </div>
 
                                 <!--Lista de funciones-->
-                                <ul class="list-unstyled fw-bold ">
-                                    <li class="p-2 mb-1 bg-lightgrey">
-                                        <div class="row px-3">
-                                            Sala 5 - 9:00 PM
+                                <div class="p-2 mb-1 bg-lightgrey">
+                                    <div class="d-flex">
+                                        <div class="m-1">
+                                            <button class="btn btn-redtele" type="button" 
+                                                data-mdb-toggle="modal" data-mdb-target="#compraModal"
+                                                data-sede="Sede Surco" data-fname="21:00" data-price="80.00" data-max="3" 
+                                                id="14" onclick="setFuncion(id)">
+                                                    21:00
+                                            </button>
                                         </div>
-                                        <div class= "row px-3 align-items-center justify-content-between">
-                                            <div class="col text-start p-0">
-                                                S/ 100.00
-                                            </div>
-                                            <div class="col-auto text-end">
-                                                <button class="btn btn-redtele">
-                                                    Comprar
-                                                </button>
-                                            </div>
-                                        </div>
-                                    </li>
-                                </ul>
+                                    </div>
+                                </div>
                             </div>
                             
 
                         </div>
-                        
-                        
-
                     </div>
                 </div>
             </div>
@@ -478,6 +449,73 @@
     </div>  
     <!--Fin de contenidos-->
 
+    <!-- Modal -->
+    <div class="modal top fade" id="compraModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+        <div class="modal-dialog   modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-start border-0 pb-0">
+                <div class="mb-3">
+                    <div class="fs-20 fw-bold mb-1">
+                        Las Monjas
+                    </div>
+                    <div class="mb-2 d-flex align-items-center justify-content-between">
+                        <div class="fs-16 fw-bold text-redtele" id="sede">
+                        </div>
+                        <div class="fs-14">
+                            <strong >
+                                30 de abril
+                            </strong>
+                            <div class="pill-white mx-2" id="funcion">
+            
+                            </div>
+                        </div>
+                    </div>
+                    
+                    
+                </div>
+                
+                <form action="#" class="ticket-panel text-start">
+                    <div class="mb-2 fs-14 d-flex align-items-center">
+                        <input hidden type="text" name="funcionid" id="funcionid">
+                        <div class="col fw-normal">
+                            <i class="fa-solid fa-ticket"></i>
+                            <strong>
+                                &nbsp;General S/&nbsp;
+                            </strong>
+                            <strong id="costo">
+                            </strong>
+                        </div>
+                        
+                        <div class="d-flex justify-content-end">
+                            <div class="d-flex align-items-center w-50 input-group" >
+                                <button  type="button" class="btn btn-redtele" onclick="minusTicket()">
+                                    <i class="fa-solid fa-minus"></i>
+                                </button>
+                                <input type="text" id="numtickets" disabled class="fs-13 form-control text-center bg-white" value="1">
+                                <button type="button" class="btn btn-redtele" onclick="plusTicket()">
+                                    <i class="fa-solid fa-plus"></i>
+                                </button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                    
+
+                    <div class="p-3 text-center">
+                        <button type="button" class="btn btn-dark" data-mdb-dismiss="modal">
+                            Cancelar
+                        </button>
+                        <button type="submit" class="btn btn-redtele">
+                            Comprar
+                        </button>
+                    </div>
+                </form>
+            </div>
+            
+        </div>
+        </div>
+    </div>
+
 
     
     <!-- End your project here-->
@@ -497,6 +535,39 @@
                 $('.input-group #search_param').val(param);
             });
         });
+    </script>
+
+    <script type="text/javascript">
+        
+        var maxnum;
+        var fname;
+        function setFuncion(id){
+            var button = document.getElementById(id);
+            maxnum = button.getAttribute("data-max");
+            fname = button.getAttribute("data-fname");
+            sede = button.getAttribute("data-sede");
+            costo = button.getAttribute("data-price");
+            $('.modal-body #funcion').text(fname);
+            $('.modal-body #sede').text(sede);
+            $('.ticket-panel #costo').text(costo);
+            $('.ticket-panel #numtickets').val(1);
+            $('.ticket-panel #funcionid').val(id);
+        }
+        function plusTicket(){
+            var val = parseInt($('.ticket-panel #numtickets').val());
+
+            if(val<maxnum){
+                $('.ticket-panel #numtickets').val(val+1);
+            }
+        }
+
+        function minusTicket(){
+            var val = parseInt($('.ticket-panel #numtickets').val());
+            if(val>1){
+                $('.ticket-panel #numtickets').val(val-1);
+            }
+        }
+
     </script>
   </body>
 </html>
