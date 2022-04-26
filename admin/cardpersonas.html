@@ -15,8 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- MDB -->
     <link rel="stylesheet" href="../css/mdb.min.css"/>
-    <!-- Cards format-->
-    <link rel="stylesheet" href="../css/cards.css"/>
+
 </head>
 <body>
 <!-- Start your project here-->
@@ -46,46 +45,18 @@
         <!-- Collapsible wrapper -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
-                <!-- Dropdown -->
-                <li class="nav-item dropdown mx-2">
-                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
-                       data-mdb-toggle="dropdown" aria-expanded="false">
-                        <strong>
-                            <i class="fa-solid fa-bars mx-1"></i>
-                            Menú
-                        </strong>
-                    </a>
-                    <!-- Dropdown menu -->
-                    <ul class="dropdown-menu-dark dropdown-menu font-weight-bold" aria-labelledby="navbarDropdown">
-                        <li>
-                            <a class="dropdown-item" href="#">Obras</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Personas</a>
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item" href="#">Sedes</a>
-                        </li>
-                    </ul>
-                </li>
             </ul>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="min-width: 50%;">
                 <!-- Search form -->
                 <form class="input-group w-auto my-auto d-flex flex-row search-panel ms-5"
                       style="min-width: 80%;">
 
-                    <button class="form-control rounded-7 btn-light dropdown-toggle fs-14 text-start font-weight-bold"
+                    <button class="form-control rounded-7 btn-light  fs-14 text-start font-weight-bold"
                             data-mdb-toggle="dropdown"
                             style="max-width: fit-content; border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important;">
                         <span id="search_concept">Personas</span> <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a class="dropdown-item" href="#todo">Todo</a></li>
-                        <li><a class="dropdown-item" href="#obras">Obras</a></li>
-                        <li><a class="dropdown-item" href="#personas">Personas</a></li>
-                        <li><a class="dropdown-item" href="#sedes">Sedes</a></li>
-                    </ul>
+
                     <input type="hidden" name="search_param" value="all" id="search_param">
                     <input
                             autocomplete="off"
@@ -103,21 +74,7 @@
 
             <!-- Right elements -->
             <ul class="navbar-nav flex-row">
-                <!--Carrito-->
-                <li class="nav-item me-3 me-lg-1 mx-2">
-                    <a class="nav-link" href="#">
-                        <i class="fas fa-solid fa-cart-shopping fa-lg"></i>
 
-                        <span class="badge rounded-pill badge-notification bg-danger">0</span>
-                    </a>
-                </li>
-                <!--Mis tickets-->
-                <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">
-                        <i class="fa-solid fa-ticket mx-1"></i>
-                        Mis tickets
-                    </a>
-                </li>
                 <!--Usuario-->
                 <li class="nav-item dropdown me-3 me-lg-1 mx-2">
                     <a class="nav-link d-sm-flex align-items-sm-center dropdown-toggle hidden-arrow"
@@ -133,17 +90,11 @@
                                 alt="usuario"
                                 loading="lazy"/>
                         <strong class="d-none d-sm-block ms-1 username">
-                            Usuario
+                            Admin
                         </strong>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end fs-13"
                         aria-labelledby="navbarDropdownMenuLink">
-                        <li>
-                            <a class="dropdown-item" href="#">Editar información</a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider"/>
-                        </li>
                         <li>
                             <a class="dropdown-item text-redtele" href="#">Cerrar sesión</a>
                         </li>
@@ -159,450 +110,292 @@
 <!--Contenidos-->
 <div class="container py-2 ">
 
-    <div class="row row-cols-1 row-cols-md-3 g-6 py-3">
-        <!--Card 1-->
-        <div class="col">
-            <div class="card h-60 position-relative" style="height: 200px; width: 350px;">
-                <div class="row h-100">
-                    <div class="col-md-5 pe-0">
-                        <a class="text-dark" href="#">
-                            <img class="card-image"
-                                 src="../img/persona.jpg"
-                                 class="img-fluid rounded-start img-cover"
-                                 style="border-radius: 15%; width: 150px;height: 200px"/>
-                        </a>
-                    </div>
-
-                    <div class="col-md-7 p-4 pe-4">
-                        <a class="text-dark" href="#">
-                            <div class="fw-bold mb-0 fs-16 card-tele-title">Leonardo Dicaprio</div>
-                            <div class="mb-2 card-tele-subtitle">
-                                Obra mas famosa:
-                                <div class="fw-bold mb-2  card-tele-title"
-                                     style="font-size: 14px">Titanic
-                                </div>
-                            </div>
-                            <div>
-                                Rating(Actor):
-                                4.9/5 <i class="ms-1 fa-solid fa-star "></i>
-                            </div>
-                            <div class="mb-2 fw-bold">
-                                Activo
-                            </div>
-                        </a>
-                        <div class="text-end">
-                            <button class="btn btn-redtele">Ver más</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Card 2-->
-        <div class="col">
-            <div class="card 60 position-relative" style="height: 200px; width: 350px;">
-                <div class="row h-100">
-                    <div class="col-md-5 pe-0">
-                        <a class="text-dark" href="#">
-                            <img class="card-image"
-                                 src="../img/director.jpg"
-                                 class="img-fluid rounded-start img-cover"
-                                 style="border-radius: 15%; width: 150px;height: 200px"/>
-                        </a>
-                    </div>
-
-                    <div class="col-md-7 p-4 pe-4">
-                        <a class="text-dark" href="#">
-                            <div class="fw-bold mb-1 fs-16 card-tele-title">Stanley Kubrick</div>
-                            <div class="mb-2 card-tele-subtitle">
-                                Obra mas famosa:
-                                <div class="fw-bold mb-0 fs-15 card-tele-title">Legends</div>
-                            </div>
-                            <div>
-                                Rating(Director):
-                                4.3/5 <i class="ms-1 fa-solid fa-star "></i>
-                            </div>
-                            <div class="mb-2 fw-bold">
-                                Activo
-                            </div>
-                        </a>
-                        <div class="text-end">
-                            <button class="btn btn-redtele">Ver más</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--Card 3-->
-        <div class="col">
-            <div class="card h-60 position-relative" style="height: 200px; width: 350px;">
-                <div class="row h-100">
-                    <div class="col-md-5 pe-0">
-                        <a class="text-dark" href="#">
-                            <img class="card-image"
-                                 src="../img/persona.jpg"
-                                 class="img-fluid rounded-start img-cover"
-                                 style="border-radius: 15%; width: 150px;height: 200px"/>
-                        </a>
-                    </div>
-
-                    <div class="col-md-7 p-4 pe-4">
-                        <a class="text-dark" href="#">
-                            <div class="fw-bold mb-0 fs-16 card-tele-title">Leonardo Dicaprio</div>
-                            <div class="mb-2 card-tele-subtitle">
-                                Obra mas famosa:
-                                <div class="fw-bold mb-2  card-tele-title"
-                                     style="font-size: 14px">Titanic
-                                </div>
-                            </div>
-                            <div>
-                                Rating(Actor):
-                                4.9/5 <i class="ms-1 fa-solid fa-star "></i>
-                            </div>
-                            <div class="mb-2 fw-bold">
-                                Activo
-                            </div>
-                        </a>
-                        <div class="text-end">
-                            <button class="btn btn-redtele">Ver más</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+    <div class="title-22 py-4">
+        Gestión de Actores y Directores
     </div>
-    <div class="row row-cols-1 row-cols-md-3 g-6 py-3">
-        <!--Card 1-->
-        <div class="col">
-            <div class="card h-60 position-relative" style="height: 200px; width: 350px;">
-                <div class="row h-100">
-                    <div class="col-md-5 pe-0">
-                        <a class="text-dark" href="#">
-                            <img class="card-image"
-                                 src="../img/persona.jpg"
-                                 class="img-fluid rounded-start img-cover"
-                                 style="border-radius: 15%; width: 150px;height: 200px"/>
-                        </a>
-                    </div>
-
-                    <div class="col-md-7 p-4 pe-4">
-                        <a class="text-dark" href="#">
-                            <div class="fw-bold mb-0 fs-16 card-tele-title">Leonardo Dicaprio</div>
-                            <div class="mb-2 card-tele-subtitle">
-                                Obra mas famosa:
-                                <div class="fw-bold mb-2  card-tele-title"
-                                     style="font-size: 14px">Titanic
-                                </div>
-                            </div>
-                            <div>
-                                Rating(Actor):
-                                4.9/5 <i class="ms-1 fa-solid fa-star "></i>
-                            </div>
-                            <div class="mb-2 fw-bold">
-                                Activo
-                            </div>
-                        </a>
-                        <div class="text-end">
-                            <button class="btn btn-redtele">Ver más</button>
-                        </div>
+    <table class="table align-middle mb-0 bg-white ">
+        <thead class="bg-light">
+        <tr class="bg-dark">
+            <th class="text-white fw-bold">Nombre</th>
+            <th class="text-white fw-bold">Puntuación(Actor)</th>
+            <th class="text-white fw-bold">Puntuación(Director)</th>
+            <th class="text-white fw-bold">Estado</th>
+            <th class="text-white fw-bold">Acciones</th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td>
+                <div class="d-flex align-items-center">
+                    <img
+                            src="../img/persona.jpg"
+                            alt=""
+                            style="width: 65px; height: 65px"
+                            class="rounded-circle"
+                    />
+                    <div class="ms-3">
+                        <p class="fw-bold mb-1">Leonardo Dicaprio</p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!--Card 2-->
-        <div class="col">
-            <div class="card 60 position-relative" style="height: 200px; width: 350px;">
-                <div class="row h-100">
-                    <div class="col-md-5 pe-0">
-                        <a class="text-dark" href="#">
-                            <img class="card-image"
-                                 src="../img/director.jpg"
-                                 class="img-fluid rounded-start img-cover"
-                                 style="border-radius: 15%; width: 150px;height: 200px"/>
-                        </a>
-                    </div>
-
-                    <div class="col-md-7 p-4 pe-4">
-                        <a class="text-dark" href="#">
-                            <div class="fw-bold mb-1 fs-16 card-tele-title">Stanley Kubrick</div>
-                            <div class="mb-2 card-tele-subtitle">
-                                Obra mas famosa:
-                                <div class="fw-bold mb-0 fs-15 card-tele-title">Legends</div>
-                            </div>
-                            <div>
-                                Rating(Director):
-                                4.3/5 <i class="ms-1 fa-solid fa-star "></i>
-                            </div>
-                            <div class="mb-2 fw-bold">
-                                Activo
-                            </div>
-                        </a>
-                        <div class="text-end">
-                            <button class="btn btn-redtele">Ver más</button>
-                        </div>
+            </td>
+            <td>
+                4.9/5 <i class="ms-1 fa-solid fa-star "></i>
+            </td>
+            <td>
+                <span class="badge badge-warning rounded-pill d-inline" style="font-size: 13px">Sin Obras</span>
+            </td>
+            <td><span class="badge badge-success rounded-pill d-inline" style="font-size: 13px"
+            >Activo</span
+            ></td>
+            <td>
+                <button type="button" class="btn btn-outline-primary fw-bold btn-sm btn-rounded" data-mdb-ripple-color="dark">
+                    Editar
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="d-flex align-items-center">
+                    <img
+                            src="../img/director.jpg"
+                            alt=""
+                            style="width: 65px; height: 65px"
+                            class="rounded-circle"
+                    />
+                    <div class="ms-3">
+                        <p class="fw-bold mb-1">Stanley Kubrick</p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!--Card 3-->
-        <div class="col">
-            <div class="card h-60 position-relative" style="height: 200px; width: 350px;">
-                <div class="row h-100">
-                    <div class="col-md-5 pe-0">
-                        <a class="text-dark" href="#">
-                            <img class="card-image"
-                                 src="../img/persona.jpg"
-                                 class="img-fluid rounded-start img-cover"
-                                 style="border-radius: 15%; width: 150px;height: 200px"/>
-                        </a>
-                    </div>
-
-                    <div class="col-md-7 p-4 pe-4">
-                        <a class="text-dark" href="#">
-                            <div class="fw-bold mb-0 fs-16 card-tele-title">Leonardo Dicaprio</div>
-                            <div class="mb-2 card-tele-subtitle">
-                                Obra mas famosa:
-                                <div class="fw-bold mb-2  card-tele-title"
-                                     style="font-size: 14px">Titanic
-                                </div>
-                            </div>
-                            <div>
-                                Rating(Actor):
-                                4.9/5 <i class="ms-1 fa-solid fa-star "></i>
-                            </div>
-                            <div class="mb-2 fw-bold">
-                                Activo
-                            </div>
-                        </a>
-                        <div class="text-end">
-                            <button class="btn btn-redtele">Ver más</button>
-                        </div>
+            </td>
+            <td>
+                <span class="badge badge-warning rounded-pill d-inline" style="font-size: 13px">Sin Obras</span>
+            </td>
+            <td>
+                4.2/5 <i class="ms-1 fa-solid fa-star "></i>
+            </td>
+            <td><span class="badge badge-danger rounded-pill d-inline" style="font-size: 13px"
+            >Retirado</span
+            ></td>
+            <td>
+                <button type="button" class="btn btn-outline-primary fw-bold btn-sm btn-rounded" data-mdb-ripple-color="dark">
+                    Editar
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="d-flex align-items-center">
+                    <img
+                            src="../img/persona.jpg"
+                            alt=""
+                            style="width: 65px; height: 65px"
+                            class="rounded-circle"
+                    />
+                    <div class="ms-3">
+                        <p class="fw-bold mb-1">Leonardo Dicao</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="row row-cols-1 row-cols-md-3 g-6 py-3">
-        <!--Card 1-->
-        <div class="col">
-            <div class="card h-60 position-relative" style="height: 200px; width: 350px;">
-                <div class="row h-100">
-                    <div class="col-md-5 pe-0">
-                        <a class="text-dark" href="#">
-                            <img class="card-image"
-                                 src="../img/persona.jpg"
-                                 class="img-fluid rounded-start img-cover"
-                                 style="border-radius: 15%; width: 150px;height: 200px"/>
-                        </a>
-                    </div>
-
-                    <div class="col-md-7 p-4 pe-4">
-                        <a class="text-dark" href="#">
-                            <div class="fw-bold mb-0 fs-16 card-tele-title">Leonardo Dicaprio</div>
-                            <div class="mb-2 card-tele-subtitle">
-                                Obra mas famosa:
-                                <div class="fw-bold mb-2  card-tele-title"
-                                     style="font-size: 14px">Titanic
-                                </div>
-                            </div>
-                            <div>
-                                Rating(Actor):
-                                4.9/5 <i class="ms-1 fa-solid fa-star "></i>
-                            </div>
-                            <div class="mb-2 fw-bold">
-                                Activo
-                            </div>
-                        </a>
-                        <div class="text-end">
-                            <button class="btn btn-redtele">Ver más</button>
-                        </div>
+            </td>
+            <td>
+                <span class="badge badge-warning rounded-pill d-inline" style="font-size: 13px">Sin Obras</span>
+            </td>
+            <td>
+                <span class="badge badge-warning rounded-pill d-inline" style="font-size: 13px">Sin Obras</span>
+            </td>
+            <td><span class="badge badge-success rounded-pill d-inline" style="font-size: 13px"
+            >Activo</span
+            ></td>
+            <td>
+                <button type="button" class="btn btn-outline-primary fw-bold btn-sm btn-rounded" data-mdb-ripple-color="dark">
+                    Editar
+                </button>
+                <button type="button" class="btn btn-outline-danger btn-sm btn-rounded" data-mdb-ripple-color="dark">
+                    Eliminar
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="d-flex align-items-center">
+                    <img
+                            src="../img/persona.jpg"
+                            alt=""
+                            style="width: 65px; height: 65px"
+                            class="rounded-circle"
+                    />
+                    <div class="ms-3">
+                        <p class="fw-bold mb-1">Leonardo Dicaprio</p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!--Card 2-->
-        <div class="col">
-            <div class="card 60 position-relative" style="height: 200px; width: 350px;">
-                <div class="row h-100">
-                    <div class="col-md-5 pe-0">
-                        <a class="text-dark" href="#">
-                            <img class="card-image"
-                                 src="../img/director.jpg"
-                                 class="img-fluid rounded-start img-cover"
-                                 style="border-radius: 15%; width: 150px;height: 200px"/>
-                        </a>
-                    </div>
-
-                    <div class="col-md-7 p-4 pe-4">
-                        <a class="text-dark" href="#">
-                            <div class="fw-bold mb-1 fs-16 card-tele-title">Stanley Kubrick</div>
-                            <div class="mb-2 card-tele-subtitle">
-                                Obra mas famosa:
-                                <div class="fw-bold mb-0 fs-15 card-tele-title">Legends</div>
-                            </div>
-                            <div>
-                                Rating(Director):
-                                4.3/5 <i class="ms-1 fa-solid fa-star "></i>
-                            </div>
-                            <div class="mb-2 fw-bold">
-                                Activo
-                            </div>
-                        </a>
-                        <div class="text-end">
-                            <button class="btn btn-redtele">Ver más</button>
-                        </div>
+            </td>
+            <td>
+                4.9/5 <i class="ms-1 fa-solid fa-star "></i>
+            </td>
+            <td>
+                <span class="badge badge-warning rounded-pill d-inline" style="font-size: 13px">Sin Obras</span>
+            </td>
+            <td><span class="badge badge-success rounded-pill d-inline" style="font-size: 13px"
+            >Activo</span
+            ></td>
+            <td>
+                <button type="button" class="btn btn-outline-primary fw-bold btn-sm btn-rounded" data-mdb-ripple-color="dark">
+                    Editar
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="d-flex align-items-center">
+                    <img
+                            src="../img/director.jpg"
+                            alt=""
+                            style="width: 65px; height: 65px"
+                            class="rounded-circle"
+                    />
+                    <div class="ms-3">
+                        <p class="fw-bold mb-1">Stanley Kubrick</p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!--Card 3-->
-        <div class="col">
-            <div class="card h-60 position-relative" style="height: 200px; width: 350px;">
-                <div class="row h-100">
-                    <div class="col-md-5 pe-0">
-                        <a class="text-dark" href="#">
-                            <img class="card-image"
-                                 src="../img/persona.jpg"
-                                 class="img-fluid rounded-start img-cover"
-                                 style="border-radius: 15%; width: 150px;height: 200px"/>
-                        </a>
-                    </div>
-
-                    <div class="col-md-7 p-4 pe-4">
-                        <a class="text-dark" href="#">
-                            <div class="fw-bold mb-0 fs-16 card-tele-title">Leonardo Dicaprio</div>
-                            <div class="mb-2 card-tele-subtitle">
-                                Obra mas famosa:
-                                <div class="fw-bold mb-2  card-tele-title"
-                                     style="font-size: 14px">Titanic
-                                </div>
-                            </div>
-                            <div>
-                                Rating(Actor):
-                                4.9/5 <i class="ms-1 fa-solid fa-star "></i>
-                            </div>
-                            <div class="mb-2 fw-bold">
-                                Activo
-                            </div>
-                        </a>
-                        <div class="text-end">
-                            <button class="btn btn-redtele">Ver más</button>
-                        </div>
+            </td>
+            <td>
+                <span class="badge badge-warning rounded-pill d-inline" style="font-size: 13px">Sin Obras</span>
+            </td>
+            <td>
+                4.2/5 <i class="ms-1 fa-solid fa-star "></i>
+            </td>
+            <td><span class="badge badge-danger rounded-pill d-inline" style="font-size: 13px"
+            >Retirado</span
+            ></td>
+            <td>
+                <button type="button" class="btn btn-outline-primary fw-bold btn-sm btn-rounded" data-mdb-ripple-color="dark">
+                    Editar
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="d-flex align-items-center">
+                    <img
+                            src="../img/persona.jpg"
+                            alt=""
+                            style="width: 65px; height: 65px"
+                            class="rounded-circle"
+                    />
+                    <div class="ms-3">
+                        <p class="fw-bold mb-1">Leonardo Dicao</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <div class="row row-cols-1 row-cols-md-3 g-6 py-3">
-        <!--Card 1-->
-        <div class="col">
-            <div class="card h-60 position-relative" style="height: 200px; width: 350px;">
-                <div class="row h-100">
-                    <div class="col-md-5 pe-0">
-                        <a class="text-dark" href="#">
-                            <img class="card-image"
-                                 src="../img/persona.jpg"
-                                 class="img-fluid rounded-start img-cover"
-                                 style="border-radius: 15%; width: 150px;height: 200px"/>
-                        </a>
-                    </div>
-
-                    <div class="col-md-7 p-4 pe-4">
-                        <a class="text-dark" href="#">
-                            <div class="fw-bold mb-0 fs-16 card-tele-title">Leonardo Dicaprio</div>
-                            <div class="mb-2 card-tele-subtitle">
-                                Obra mas famosa:
-                                <div class="fw-bold mb-2  card-tele-title"
-                                     style="font-size: 14px">Titanic
-                                </div>
-                            </div>
-                            <div>
-                                Rating(Actor):
-                                4.9/5 <i class="ms-1 fa-solid fa-star "></i>
-                            </div>
-                            <div class="mb-2 fw-bold">
-                                Activo
-                            </div>
-                        </a>
-                        <div class="text-end">
-                            <button class="btn btn-redtele">Ver más</button>
-                        </div>
+            </td>
+            <td>
+                <span class="badge badge-warning rounded-pill d-inline" style="font-size: 13px">Sin Obras</span>
+            </td>
+            <td>
+                <span class="badge badge-warning rounded-pill d-inline" style="font-size: 13px">Sin Obras</span>
+            </td>
+            <td><span class="badge badge-success rounded-pill d-inline" style="font-size: 13px"
+            >Activo</span
+            ></td>
+            <td>
+                <button type="button" class="btn btn-outline-primary fw-bold btn-sm btn-rounded" data-mdb-ripple-color="dark">
+                    Editar
+                </button>
+                <button type="button" class="btn btn-outline-danger btn-sm btn-rounded" data-mdb-ripple-color="dark">
+                    Eliminar
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="d-flex align-items-center">
+                    <img
+                            src="../img/persona.jpg"
+                            alt=""
+                            style="width: 65px; height: 65px"
+                            class="rounded-circle"
+                    />
+                    <div class="ms-3">
+                        <p class="fw-bold mb-1">Leonardo Dicaprio</p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!--Card 2-->
-        <div class="col">
-            <div class="card 60 position-relative" style="height: 200px; width: 350px;">
-                <div class="row h-100">
-                    <div class="col-md-5 pe-0">
-                        <a class="text-dark" href="#">
-                            <img class="card-image"
-                                 src="../img/director.jpg"
-                                 class="img-fluid rounded-start img-cover"
-                                 style="border-radius: 15%; width: 150px;height: 200px"/>
-                        </a>
-                    </div>
-
-                    <div class="col-md-7 p-4 pe-4">
-                        <a class="text-dark" href="#">
-                            <div class="fw-bold mb-1 fs-16 card-tele-title">Stanley Kubrick</div>
-                            <div class="mb-2 card-tele-subtitle">
-                                Obra mas famosa:
-                                <div class="fw-bold mb-0 fs-15 card-tele-title">Legends</div>
-                            </div>
-                            <div>
-                                Rating(Director):
-                                4.3/5 <i class="ms-1 fa-solid fa-star "></i>
-                            </div>
-                            <div class="mb-2 fw-bold">
-                                Activo
-                            </div>
-                        </a>
-                        <div class="text-end">
-                            <button class="btn btn-redtele">Ver más</button>
-                        </div>
+            </td>
+            <td>
+                4.9/5 <i class="ms-1 fa-solid fa-star "></i>
+            </td>
+            <td>
+                <span class="badge badge-warning rounded-pill d-inline" style="font-size: 13px">Sin Obras</span>
+            </td>
+            <td><span class="badge badge-success rounded-pill d-inline" style="font-size: 13px"
+            >Activo</span
+            ></td>
+            <td>
+                <button type="button" class="btn btn-outline-primary fw-bold btn-sm btn-rounded" data-mdb-ripple-color="dark">
+                    Editar
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="d-flex align-items-center">
+                    <img
+                            src="../img/director.jpg"
+                            alt=""
+                            style="width: 65px; height: 65px"
+                            class="rounded-circle"
+                    />
+                    <div class="ms-3">
+                        <p class="fw-bold mb-1">Stanley Kubrick</p>
                     </div>
                 </div>
-            </div>
-        </div>
-        <!--Card 3-->
-        <div class="col">
-            <div class="card h-60 position-relative" style="height: 200px; width: 350px;">
-                <div class="row h-100">
-                    <div class="col-md-5 pe-0">
-                        <a class="text-dark" href="#">
-                            <img class="card-image"
-                                 src="../img/persona.jpg"
-                                 class="img-fluid rounded-start img-cover"
-                                 style="border-radius: 15%; width: 150px;height: 200px"/>
-                        </a>
-                    </div>
-
-                    <div class="col-md-7 p-4 pe-4">
-                        <a class="text-dark" href="#">
-                            <div class="fw-bold mb-0 fs-16 card-tele-title">Leonardo Dicaprio</div>
-                            <div class="mb-2 card-tele-subtitle">
-                                Obra mas famosa:
-                                <div class="fw-bold mb-2  card-tele-title"
-                                     style="font-size: 14px">Titanic
-                                </div>
-                            </div>
-                            <div>
-                                Rating(Actor):
-                                4.9/5 <i class="ms-1 fa-solid fa-star "></i>
-                            </div>
-                            <div class="mb-2 fw-bold">
-                                Activo
-                            </div>
-                        </a>
-                        <div class="text-end">
-                            <button class="btn btn-redtele">Ver más</button>
-                        </div>
+            </td>
+            <td>
+                <span class="badge badge-warning rounded-pill d-inline" style="font-size: 13px">Sin Obras</span>
+            </td>
+            <td>
+                4.2/5 <i class="ms-1 fa-solid fa-star "></i>
+            </td>
+            <td><span class="badge badge-danger rounded-pill d-inline" style="font-size: 13px"
+            >Retirado</span
+            ></td>
+            <td>
+                <button type="button" class="btn btn-outline-primary fw-bold btn-sm btn-rounded" data-mdb-ripple-color="dark">
+                    Editar
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div class="d-flex align-items-center">
+                    <img
+                            src="../img/persona.jpg"
+                            alt=""
+                            style="width: 65px; height: 65px"
+                            class="rounded-circle"
+                    />
+                    <div class="ms-3">
+                        <p class="fw-bold mb-1">Leonardo Dicao</p>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
+            </td>
+            <td>
+                <span class="badge badge-warning rounded-pill d-inline" style="font-size: 13px">Sin Obras</span>
+            </td>
+            <td>
+                <span class="badge badge-warning rounded-pill d-inline" style="font-size: 13px">Sin Obras</span>
+            </td>
+            <td><span class="badge badge-success rounded-pill d-inline" style="font-size: 13px"
+            >Activo</span
+            ></td>
+            <td>
+                <button type="button" class="btn btn-outline-primary fw-bold btn-sm btn-rounded" data-mdb-ripple-color="dark">
+                    Editar
+                </button>
+                <button type="button" class="btn btn-outline-danger btn-sm btn-rounded" data-mdb-ripple-color="dark">
+                    Eliminar
+                </button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
     <!--Paginacion-->
     <nav aria-label="..." class="py-2 justify-content-center">
         <div style="text-align: -webkit-center;">
@@ -633,12 +426,10 @@
 
     </nav>
 
-    </div>
-
+</div>
 
 
 </div>
-
 
 
 <!--Footer-->
