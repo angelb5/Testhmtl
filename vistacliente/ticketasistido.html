@@ -168,7 +168,9 @@
                     <div></div>
                 </div>
                 <div class="col-md-3 text-end">
-                    <button class="btn btn-redtele rounded-9">Cancelar compra</button>
+                    <button type="button" class="btn btn-redtele" data-mdb-toggle="modal" data-mdb-target="#starModal">
+                        <i class="fa-solid fa-star fs-22"></i>
+                    </button>
                 </div>
             </div>
             <div class="row">
@@ -233,7 +235,6 @@
                 <div class="row row-cols-3 mb-3">
                     <div class="col mb-2">
                         <div class="card shadow-0">
-                            <a class="link-actor" href="#">
                                 <div class="d-sm-flex align-items-sm-center">
                                     <div class="actor-image">
                                             <img src="../img/july.png" alt="July Naters">
@@ -241,8 +242,10 @@
                                     <strong class="d-none d-sm-block ms-1 actorname">
                                         July Naters
                                     </strong>
+                                    <button type="button" class="btn btn-dark px-2" data-mdb-toggle="modal" data-mdb-target="#starModal">
+                                        <i class="fa-solid fa-star fs-14"></i>
+                                    </button>
                                 </div>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -253,7 +256,6 @@
                 <div class="row row-cols-3 mb-3">
                     <div class="col mb-2">
                         <div class="card shadow-0">
-                            <a class="link-actor" href="#">
                                 <div class="d-sm-flex align-items-sm-center">
                                     <div class="actor-image">
                                         <img src="../img/katia.png" alt="Katia Palma">
@@ -261,13 +263,14 @@
                                     <strong class="d-none d-sm-block ms-1 actorname">
                                         Katia Palma
                                     </strong>
-                                </div>
-                            </a>                          
+                                    <button type="button" class="btn btn-dark px-2" data-mdb-toggle="modal" data-mdb-target="#starModal">
+                                        <i class="fa-solid fa-star fs-14"></i>
+                                    </button>
+                                </div>                       
                         </div>
                     </div>
                     <div class="col mb-2">
                         <div class="card shadow-0">
-                            <a class="link-actor" href="#">
                                 <div class="d-sm-flex align-items-sm-center">
                                     <div class="actor-image">
                                             <img src="../img/patricia.jpg" alt="Patricia Portocarrero">
@@ -275,13 +278,14 @@
                                     <strong class="d-none d-sm-block ms-1 actorname">
                                         Patricia Portocarrero
                                     </strong>
+                                    <button type="button" class="btn btn-dark px-2" data-mdb-toggle="modal" data-mdb-target="#starModal">
+                                        <i class="fa-solid fa-star fs-14"></i>
+                                    </button>
                                 </div>
-                            </a>
                         </div>    
                     </div>
                     <div class="col mb-2">
                         <div class="card shadow-0">
-                            <a class="link-actor" href="#">
                                 <div class="d-sm-flex align-items-sm-center">
                                     <div class="actor-image">
                                             <img src="../img/saskia.png" alt="Saskia Bernaola">
@@ -289,8 +293,10 @@
                                     <strong class="d-none d-sm-block ms-1 actorname">
                                         Saskia Bernaola
                                     </strong>
+                                    <button type="button" class="btn btn-dark px-2" data-mdb-toggle="modal" data-mdb-target="#starModal">
+                                        <i class="fa-solid fa-star fs-14"></i>
+                                    </button>
                                 </div>
-                            </a>
                         </div>
                     </div>
                 </div>
@@ -301,6 +307,38 @@
 
 </div>
 
+
+<!-- Modal -->
+<div class="modal top fade" id="starModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true" data-mdb-backdrop="true" data-mdb-keyboard="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Puntúa</h5>
+          <button type="button" class="btn-close" data-mdb-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body d-flex justify-content-center">
+            <div class="rate">
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star5" title="text">5 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star4" title="text">4 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star2" title="text">2 stars</label>
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star1" title="text">1 star</label>
+              </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-dark" data-mdb-dismiss="modal">
+            Cerrar
+          </button>
+          <button type="button" class="btn btn-redtele">Calificar</button>
+        </div>
+      </div>
+    </div>
+  </div>
 
 <footer class="bg-dark text-white text-start">
     <!-- Grid container -->
@@ -347,12 +385,17 @@
     </div>
     <!-- Copyright -->
     </footer>
-<!-- End your project here-->
+
+
+
+
+    <!-- End your project here-->
+
 
 
 
 <!-- MDB -->
-<script type="text/javascript" src="js/mdb.min.js"></script>
+<script type="text/javascript" src="../js/mdb.min.js"></script>
 <!-- Custom scripts -->
 <script type="text/javascript">
     $(document).ready(function(e){
