@@ -1,9 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
-    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <title>Material Design for Bootstrap</title>
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/b101dc44ce.js" crossorigin="anonymous"></script>
@@ -12,10 +12,9 @@
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap"
-          rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- MDB -->
-    <link rel="stylesheet" href="../css/mdb.min.css"/>
+    <link rel="stylesheet" href="../css/mdb.min.css" />
 </head>
 <body>
 <!-- Start your project here-->
@@ -36,9 +35,7 @@
         </a>
 
         <!-- Toggle button -->
-        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
-                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <i class="fas fa-bars"></i>
         </button>
 
@@ -47,16 +44,14 @@
             <ul class="navbar-nav mb-2 mb-lg-0">
                 <!-- Dropdown -->
                 <li class="nav-item dropdown mx-2">
-                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
-                       data-mdb-toggle="dropdown" aria-expanded="false">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
                         <strong>
                             <i class="fa-solid fa-bars mx-1"></i>
                             Menú
                         </strong>
                     </a>
                     <!-- Dropdown menu -->
-                    <ul class="dropdown-menu-dark dropdown-menu font-weight-bold"
-                        aria-labelledby="navbarDropdown">
+                    <ul class="dropdown-menu-dark dropdown-menu font-weight-bold" aria-labelledby="navbarDropdown">
                         <li>
                             <a class="dropdown-item" href="#">Obras</a>
                         </li>
@@ -75,8 +70,7 @@
                 <form class="input-group w-auto my-auto d-flex flex-row search-panel ms-5"
                       style="min-width: 80%;">
 
-                    <button class="form-control rounded-7 btn-light dropdown-toggle fs-14 text-start font-weight-bold"
-                            data-mdb-toggle="dropdown"
+                    <button class="form-control rounded-7 btn-light dropdown-toggle fs-14 text-start font-weight-bold" data-mdb-toggle="dropdown"
                             style="max-width: fit-content; border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important;">
                         <span id="search_concept">Todo</span> <span class="caret"></span>
                     </button>
@@ -99,6 +93,7 @@
                     </span>
                 </form>
             </ul>
+
 
 
             <!-- Right elements -->
@@ -131,7 +126,7 @@
 
 
 <div class="container py-5" style="display:flex;justify-content:center;align-items:center;">
-    <div class="p-4 bg-dark text-white rounded-7">
+    <div class="p-4 bg-dark text-white rounded-7" >
         <form autocomplete="off">
             <!-- Stack the columns on mobile by making one full-width and the other half-width -->
             <div class=" title-24 mb-3 text-white text-center " href="#">
@@ -143,22 +138,27 @@
                         style="margin-top: 2px;"
                 />
             </div>
-            <div class="title-24 mb-3 text-white text-center ">Editar Persona</div>
+            <div class="title-24 mb-3 text-white text-center ">Editar sede</div>
             <br/>
-            <div>
-                <div class="row" style="width: 800px; font-size:15px">
+            <div >
+                <div class="row" style="width: 800px; font-size:15px" >
                     <div class="col">
                         <div class=" text-center mb-4 align-items-center d-flex" style="min-width: 200px;">
-                            <div style="padding-left: 50px; padding-right: 50px" class="w-100">
-                                <div class="form-outline form-white br-5">
+                            <div  style="padding-left: 50px; padding-right: 50px" class="w-100" >
+                                <div class="form-outline form-white mb-4">
 
                                     <div class="form-outline form-white mb-4">
-                                        <input value="Katia" type="text" id="idnombre" class="form-control"/>
-                                        <label class="form-label" for="idnombre">Nombre</label>
+                                        <input value="Sede1" type="text" id="idsedes" class="form-control" />
+                                        <label class="form-label" for="idsedes">Nombre de la sede</label>
                                     </div>
                                     <div class="form-outline form-white mb-4">
-                                        <input value="Palma" type="text" id="" class="form-control"/>
-                                        <label class="form-label" for="">Apellido</label>
+                                        <input value="Av Santiago de Surco 1990" type="text" id="" class="form-control" />
+                                        <label class="form-label" for="">Dirección</label>
+                                    </div>
+
+                                    <div class="form-outline form-white mb-4">
+                                        <input value="42.3583; 71.0575" type="text" id="" class="form-control" />
+                                        <label class="form-label" for="">Ubicación (coordenadas geográficas)</label>
                                     </div>
                                 </div>
                                 <br/>
@@ -174,41 +174,44 @@
                                     <div class="col">
                                         <button type="submit"  class="btn btn-danger mb-4" >Actualizar</button>
                                     </div>
+
                                 </div>
+
+
+
                             </div>
+
                         </div>
 
                     </div>
                     <div class="col">
                         <div class=" text-center mb-4 align-items-center d-flex" style="min-width: 200px;">
-                            <div style="padding-left: 3px; padding-right: 50px" class="w-100">
-                                <div class="form-outline form-white mb-4 ">
-                                    <div class="mb-4">
-                                        <label style="padding-right: 230px">Añadir foto:</label>
+                            <div  style="padding-left: 3px; padding-right: 50px" class="w-100" >
+                                <div class="form-outline form-white mb-4">
+                                    <br/>
+                                    <div class="mb-4" >
+                                        <label style="padding-right: 230px" >Añadir foto:</label>
                                         <br/>
-                                        <form name="subida-imagenes" type="POST" enctype="multipart/formdata">
+                                        <form name="subida-imagenes" type="POST" enctype="multipart/formdata" >
                                             <br/>
                                             <img
 
-                                                    src="../img/katia.png"
+                                                    src="../img/sedesurco.jpg"
                                                     height="120"
                                                     alt="foto"
                                                     loading="lazy"/>
                                             <br/><br/>
-                                            <input type="file" name="imagen1"/>
+                                            <input type="file" name="imagen1" />
                                         </form>
 
                                     </div>
+
                                 </div>
                                 <br/>
-
 
                             </div>
                         </div>
                     </div>
-
-
-
                 </div>
 
             </div>
@@ -221,7 +224,7 @@
     <!-- Grid container -->
     <div class="container p-3">
         <!-- Section: Social media -->
-        <section class="text-center">
+        <section class="text-center" >
             <!-- Facebook -->
             <a
                     class="btn btn-dark btn-floating btn-lg text-white m-1"
@@ -265,14 +268,15 @@
 <!-- End your project here-->
 
 
+
 <!-- MDB -->
 <script type="text/javascript" src="../js/mdb.min.js"></script>
 <!-- Custom scripts -->
 <script type="text/javascript">
-    $(document).ready(function (e) {
-        $('.search-panel .dropdown-menu').find('a').click(function (e) {
+    $(document).ready(function(e){
+        $('.search-panel .dropdown-menu').find('a').click(function(e) {
             e.preventDefault();
-            var param = $(this).attr("href").replace("#", "");
+            var param = $(this).attr("href").replace("#","");
             var concept = $(this).text();
             $('.search-panel span#search_concept').text(concept);
             $('.input-group #search_param').val(param);
