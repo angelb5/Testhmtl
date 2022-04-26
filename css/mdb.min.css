@@ -2288,8 +2288,8 @@ progress {
 .form-control {
   display: block;
   width: 100%;
-  padding: .375rem .75rem;
-  font-size: 1rem;
+  padding: .5rem .75rem;
+  font-size: 13px;
   font-weight: 400;
   line-height: 1.6;
   color: #4f4f4f;
@@ -15088,7 +15088,7 @@ i.flag-zw:before {
 }
 
 .form-outline .form-control:focus~.form-label {
-  color: #1266f1
+  color: var(--mdb-redtele)
 }
 
 .form-outline .form-control.active~.form-notch .form-notch-middle,
@@ -15101,7 +15101,7 @@ i.flag-zw:before {
 
 .form-outline .form-control:focus~.form-notch .form-notch-middle {
   border-bottom: .125rem solid;
-  border-color: #1266f1
+  border-color: var(--mdb-redtele)
 }
 
 .form-outline .form-control.active~.form-notch .form-notch-leading,
@@ -15111,9 +15111,9 @@ i.flag-zw:before {
 }
 
 .form-outline .form-control:focus~.form-notch .form-notch-leading {
-  border-top: .125rem solid #1266f1;
-  border-bottom: .125rem solid #1266f1;
-  border-left: .125rem solid #1266f1
+  border-top: .125rem solid var(--mdb-redtele);
+  border-bottom: .125rem solid var(--mdb-redtele);
+  border-left: .125rem solid var(--mdb-redtele)
 }
 
 .form-outline .form-control.active~.form-notch .form-notch-trailing,
@@ -15123,9 +15123,9 @@ i.flag-zw:before {
 }
 
 .form-outline .form-control:focus~.form-notch .form-notch-trailing {
-  border-top: .125rem solid #1266f1;
-  border-bottom: .125rem solid #1266f1;
-  border-right: .125rem solid #1266f1
+  border-top: .125rem solid var(--mdb-redtele);
+  border-bottom: .125rem solid var(--mdb-redtele);
+  border-right: .125rem solid var(--mdb-redtele)
 }
 
 .form-outline .form-control.disabled,
@@ -19428,7 +19428,23 @@ a{
   object-fit: cover;
 }
 
+/*user page*/
+.user-page{
+  min-width: 250px;
+  width: 250px;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+  border-radius: 50%;
+}
 
+.user-page img {
+  display: inline;
+  margin: 0 auto;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
 /*actor name*/
 .actorname{
@@ -19531,4 +19547,9 @@ a{
   object-fit: cover;
   width: 100%;
   height: 100%;
+}
+
+/*maxh-200*/
+.h-190{
+  height: 190px;
 }
