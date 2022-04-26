@@ -126,7 +126,7 @@
 <!-- Imágenes -->
 <div class="container py-2">
     <div class="row row-cols-3 row-cols-md-3 g-3 py-3">
-        <div class="title-30 py-6">Imágenes </div>
+        <div class="title-30 py-6">Imágenes</div>
         <div></div>
         <div class="px-7">
             <button class="btn btn-redtele" style="height:50px;width:150px">Añadir imagen</button>
@@ -156,22 +156,32 @@
 </div>
 
 <!-- Tabla con info de sedes -->
+
 <div class="container py-2">
-    <div class="title-26 py-6">Salas </div>
-    <table class="table table-bordered text-center">
+    <div class="title-26 py-6">Salas</div>
+    <div style="float: right">
+        <button class="btn btn-redtele btn-sm" type="button" style="height: 45px; width: 140px;margin-bottom: 10px">
+            <div class="row">
+                <div class="col-3"><i class="fa fa-couch col" style="font-size: 24px;margin-top: 5px"></i></div>
+                <div class="col-9"><p class="text-white fw-bold col">Nueva Sala</p></div>
+            </div>
+        </button>
+    </div>
+    <table class="table content-table table-hover text-center">
         <thead>
-        <tr class="bg-black bg-opacity-25">
+        <tr class="bg-black ">
             <th scope="col"><b>Número de sala</b></th>
             <th scope="col"><b>Capacidad</b></th>
             <th scope="col"><b>Estado</b></th>
-            <th scope="col"></th>
+            <th scope="col"><b>Acciones</b></th>
         </tr>
         </thead>
         <tbody>
         <tr>
             <td class="py-4">Sala 1</td>
             <td class="py-4">250 personas</td>
-            <td class="py-4 text-success">Disponible</td>
+            <td class="py-4 text-success"><span class="badge badge-success rounded-pill d-inline"
+                                                style="font-size: 13px">Disponible</span></td>
             <td>
                 <button class="btn btn-redtele">Editar</button>
             </td>
@@ -179,7 +189,8 @@
         <tr>
             <td class="py-4">Sala 2</td>
             <td class="py-4">250 personas</td>
-            <td class="py-4 text-danger">No disponible</td>
+            <td class="py-4 text-danger"><span class="badge badge-danger rounded-pill d-inline"
+                                               style="font-size: 13px">No disponible</span></td>
             <td>
                 <button class="btn btn-redtele">Editar</button>
             </td>
@@ -187,7 +198,9 @@
         <tr>
             <td class="py-4">Sala 3</td>
             <td class="py-4">250 personas</td>
-            <td class="py-4 text-success">Disponible</td>
+            <td class="py-4 text-success"><span class="badge badge-success rounded-pill d-inline"
+                                                style="font-size: 13px">Disponible</span>
+            </td>
             <td>
                 <button class="btn btn-redtele">Editar</button>
             </td>
@@ -195,13 +208,42 @@
         <tr>
             <td class="py-4">Sala 4</td>
             <td class="py-4">300 personas</td>
-            <td class="py-4 text-success">Disponible</td>
+            <td class="py-4 text-success"><span class="badge badge-success rounded-pill d-inline"
+                                                style="font-size: 13px">Disponible</span></td>
             <td>
                 <button class="btn btn-redtele">Editar</button>
             </td>
         </tr>
         </tbody>
     </table>
+    <nav aria-label="..." class="py-2 justify-content-center">
+        <div style="text-align: -webkit-center;">
+            <ul class="pagination shadow-1-soft rounded-2" style="width: fit-content;">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item " aria-current="page">
+                    <a class="page-link" href="#">
+                        2 <span class="visually-hidden">(current)</span>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+
+    </nav>
 </div>
 
 </body>
