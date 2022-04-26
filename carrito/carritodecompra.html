@@ -35,171 +35,350 @@
                     />
                 </a>
 
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="min-width: 50%;">
-                    <!-- Search form -->
-                    <form class="input-group w-auto my-auto d-flex flex-row search-panel ms-5"
-                          style="min-width: 80%;">
+                <!-- Toggle button -->
+                <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                        data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars"></i>
+                </button>
 
-                        <button class="form-control rounded-7 btn-light dropdown-toggle fs-14 text-start font-weight-bold"
-                                data-mdb-toggle="dropdown"
-                                style="max-width: fit-content; border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important;">
-                            <span id="search_concept">Todo</span> <span class="caret"></span>
-                        </button>
-                        <ul class="dropdown-menu" role="menu">
-                            <li><a class="dropdown-item" href="#todo">Todo</a></li>
-                            <li><a class="dropdown-item" href="#obras">Obras</a></li>
-                            <li><a class="dropdown-item" href="#personas">Personas</a></li>
-                            <li><a class="dropdown-item" href="#sedes">Sedes</a></li>
-                        </ul>
-                        <input type="hidden" name="search_param" value="all" id="search_param">
-                        <input
-                                autocomplete="off"
-                                type="search"
-                                class="form-control rounded-7 fs-14"
-                                placeholder="Buscar en Teleticket"
-                                style="border-top-left-radius: 0 !important; border-bottom-left-radius: 0 !important;"
-                        />
-                        <span class="input-group-text border-0 d-none d-lg-flex">
-                            <i class="fas fa-search"></i>
-                        </span>
-                    </form>
-                </ul>
-            <div>
+                <!-- Collapsible wrapper -->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mb-2 mb-lg-0">
+                        <!-- Dropdown -->
+                        <li class="nav-item dropdown mx-2">
+                            <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
+                               data-mdb-toggle="dropdown" aria-expanded="false">
+                                <strong>
+                                    <i class="fa-solid fa-bars mx-1"></i>
+                                    Menú
+                                </strong>
+                            </a>
+                            <!-- Dropdown menu -->
+                            <ul class="dropdown-menu-dark dropdown-menu font-weight-bold"
+                                aria-labelledby="navbarDropdown">
+                                <li>
+                                    <a class="dropdown-item" href="#">Obras</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="#">Personas</a>
+                                </li>
+
+                                <li>
+                                    <a class="dropdown-item" href="#">Sedes</a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="min-width: 50%;">
+                        <!-- Search form -->
+                        <form class="input-group w-auto my-auto d-flex flex-row search-panel ms-5"
+                              style="min-width: 80%;">
+
+                            <button class="form-control rounded-7 btn-light dropdown-toggle fs-14 text-start font-weight-bold"
+                                    data-mdb-toggle="dropdown"
+                                    style="max-width: fit-content; border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important;">
+                                <span id="search_concept">Sedes</span> <span class="caret"></span>
+                            </button>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a class="dropdown-item" href="#sedes">Sedes</a></li>
+                                <li><a class="dropdown-item" href="#personas">Personas</a></li>
+                                <li><a class="dropdown-item" href="#clientes">Clientes</a></li>
+                            </ul>
+                            <input type="hidden" name="search_param" value="all" id="search_param">
+                            <input
+                                    autocomplete="off"
+                                    type="search"
+                                    class="form-control rounded-7 fs-14"
+                                    placeholder="Buscar en Teleticket"
+                                    style="border-top-left-radius: 0 !important; border-bottom-left-radius: 0 !important;"
+                            />
+                            <span class="input-group-text border-0 d-none d-lg-flex">
+                        <i class="fas fa-search"></i>
+                    </span>
+                        </form>
+                    </ul>
+
+
+                    <!-- Right elements -->
+                    <ul class="navbar-nav flex-row">
+                        <!--Usuario-->
+                        <li class="nav-item dropdown me-3 me-lg-1 mx-2">
+                            <a class="nav-link d-sm-flex align-items-sm-center dropdown-toggle hidden-arrow"
+                               href="#"
+                               id="navbarDropdownMenuLink"
+                               role="button"
+                               data-mdb-toggle="dropdown"
+                               aria-expanded="false">
+                                <img
+                                        src="../img/default-profile.png"
+                                        class="rounded-circle"
+                                        height="22"
+                                        alt="usuario"
+                                        loading="lazy"/>
+                                <strong class="d-none d-sm-block ms-1 username">
+                                    Admin
+                                </strong>
+                            </a>
+                            <ul class="dropdown-menu dropdown-menu-end fs-13"
+                                aria-labelledby="navbarDropdownMenuLink">
+                                <li>
+                                    <a class="dropdown-item text-redtele" href="#">Cerrar sesión</a>
+                                </li>
+                            </ul>
+                        </li>
+
+                    </ul>
         </nav>
+        <!-- Fin de Navbar -->
 
-        <section class="hover-shadow h-custom whir ">
+        <!--Contenidos-->
 
-            <div class="container align-content-center py-5 ">
-                <h3><b>Agregar datos de Tarjeta</b></h3>
-                <div class="row d-flex justify-content-center align-items-center h-100 ">
-                    <div class="col">
+        <div class="container py-3">
 
-                        <div class="card shadow-2-strong mb-5 mb-lg-0" style="border-radius: 16px;">
-                            <div class="card-body p-5 bg-dark text-white">
 
-                                <div class="row">
-                                    <div class="col-md-6 col-lg-4 col-xl-3 mb-4 mb-md-0 text-white">
-                                        <form>
-                                            <div class="d-flex flex-row pb-3">
-                                                <div class="d-flex align-items-center pe-2">
-                                                    <input class="form-check-input" type="radio" name="radioNoLabel"
-                                                           id="radioNoLabel1v"
-                                                           value="" aria-label="..." checked/>
-                                                </div>
-                                                <div class="rounded border w-100 p-3">
-                                                    <p class="d-flex align-items-center mb-0">
-                                                        <i class="fab fa-cc-mastercard fa-2x text-dark pe-2 text-white"></i>Credit
-                                                        Card
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex flex-row pb-3">
-                                                <div class="d-flex align-items-center pe-2">
-                                                    <input class="form-check-input" type="radio" name="radioNoLabel"
-                                                           id="radioNoLabel2v"
-                                                           value="" aria-label="..."/>
-                                                </div>
-                                                <div class="rounded border w-100 p-3">
-                                                    <p class="d-flex align-items-center mb-0">
-                                                        <i class="fab fa-cc-visa fa-2x fa-lg text-dark pe-2 text-white"></i>Debit
-                                                        Card
-                                                    </p>
-                                                </div>
-                                            </div>
-                                            <div class="d-flex flex-row">
-                                                <div class="d-flex align-items-center pe-2">
-                                                    <input class="form-check-input" type="radio" name="radioNoLabel"
-                                                           id="radioNoLabel3v"
-                                                           value="" aria-label="..."/>
-                                                </div>
-                                                <div class="rounded border w-100 p-3">
-                                                    <p class="d-flex align-items-center mb-0">
-                                                        <i class="fab fa-cc-paypal fa-2x fa-lg text-dark pe-2 text-white"></i>PayPal
-                                                    </p>
-                                                </div>
-                                            </div>
-                                        </form>
-                                    </div>
+            <div class="title-24">
+                Carrito de Compras
+            </div>
+
+            <div class="row row-cols-1 row-cols-md-2 g-4 py-3">
+
+                <div class="col">
+                    <div class="card h-100 position-relative">
+                        <div class="row h-100">
+
+                            <div class="col-md-6 col-lg-4 col-xl-6">
+                                <a class="text-dark" href="#"></a>
+                                <img src="../img/yerbatero.jpg" class="img-fluid rounded-start img-cover"/>
+                                </a>
+                            </div>
+
+                            <div class="col-md-6 p-3 pe-4">
+                                <a class="text-dark" href="#">
+                                    <div class="fw-bold mb-2 fs-14 card-tele-title">Yerbateros</div>
+
                                     <div class="col-md-6 col-lg-4 col-xl-6 ">
-                                        <div class="row">
-                                            <div class="col-12 col-xl-6">
-                                                <div class="form-outline mb-4 mb-xl-5">
-                                                    <input type="text" id="typeName"
-                                                           class="form-control bg-white bg-opacity-25 text-white border-light " siez="17"
-                                                           placeholder="John Smith "/>
-                                                    <label class="form-label text-white" for="typeName" style="margin-left: 0px;">Titular de la
-                                                        tarjeta</label>
-                                                    <div class="form-notch">
-                                                        <div class="form-notch-leading" style="width: 9px;"></div>
-                                                        <div class="form-notch-middle" style="width: 88px;"></div>
-                                                        <div class="form-notch-trailing"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-outline mb-4 mb-xl-5">
-                                                    <input type="text" id="typeExp" class="form-control form-control-lg bg-white bg-opacity-25 text-white "
-                                                           placeholder="MM/YY"
-                                                           size="7" id="exp" minlength="7" maxlength="7"/>
-                                                    <label class="form-label text-white" for="typeExp" style="margin-left: 0px;">Expiracíón</label>
-                                                    <div class="form-notch">
-                                                        <div class="form-notch-leading" style="width: 9px;"></div>
-                                                        <div class="form-notch-middle" style="width: 88px;"></div>
-                                                        <div class="form-notch-trailing"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="col-12 col-xl-6">
-                                                <div class="form-outline mb-4 mb-xl-5">
-                                                    <input type="text" id="typeText"
-                                                           class="form-control bg-white bg-opacity-25 text-white border-light" siez="17"
-                                                           placeholder="1111 2222 3333 4444" minlength="19"
-                                                           maxlength="19"/>
-                                                    <label class="form-label text-white" for="typeText">Numero de Tarjeta</label>
-                                                    <div class="form-notch"><div class="form-notch-leading" style="width: 9px;"></div>
-                                                        <div class="form-notch-middle" style="width: 83.2px;"></div>
-                                                        <div class="form-notch-trailing"></div>
-                                                    </div>
-                                                </div>
-
-                                                <div class="form-outline mb-4 mb-xl-5">
-                                                    <input type="password" id="typeText"
-                                                           class="form-control bg-white bg-opacity-25 text-white border-light"
-                                                           placeholder="&#9679;&#9679;&#9679;" size="1" minlength="3"
-                                                           maxlength="3" />
-                                                    <label class="form-label text-white" for="typeText">CVV</label>
-                                                    <div class="form-notch">
-                                                        <div class="form-notch-leading" style="width: 9px;"></div>
-                                                        <div class="form-notch-middle" style="width: 88px;"></div>
-                                                        <div class="form-notch-trailing"></div>
-                                                    </div>
-                                                </div>
-                                            </div>
+                                        <div class="mb-2 text-right">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                                                <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"></path>
+                                                <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
+                                            </svg>
+                                            6:00 pm 19/06/2022
                                         </div>
+                                        <div class="mb-2 text-right">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                            </svg>
+                                            Teatro Pirandelo
+                                        </div>
+                                        <div class="mb-2 text-right">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="currentColor" class="bi bi-cash-stack" viewBox="0 0 16 16">
+                                                <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                                                <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z"/>
+                                            </svg>
+                                            S/.90.00
+                                        </div>
+
                                     </div>
-                                    <div class="col-lg-6 col-xl-3">
-
-                                        <button type="button" class="btn btn-danger">
-                                            <div class="d-flex justify-content-between">
-                                                <span>Guardar</span>
-                                            </div>
-                                        </button>
-
-                                        <button type="button" class="btn btn-danger">
-                                            <div class="d-flex justify-content-between">
-                                                <span>Atrás</span>
-                                            </div>
-                                        </button>
+                                </a>
 
 
+                                <div class="col-md-6 col-lg-4 col-xl-6 ">
+                                    <div class="mb-2 text-right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-perforated" viewBox="0 0 16 16">
+                                            <path d="M4 4.85v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Z"/>
+                                            <path d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13ZM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9V4.5Z"/>
+                                        </svg>
+                                        # tickets
                                     </div>
+                                    <div class="mb-2 text-right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tv" viewBox="0 0 16 16">
+                                            <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z"/>
+                                        </svg>
+                                      Sala 5
+                                    </div>
+                                    <div class="mb-2 text-right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                        </svg>
+                                         100 min
+                                    </div>
+
+                                </div>
+                                </a>
+
+
+                                <div class="text-end">
+                                    <button class="btn btn-redtele">Eliminar</button>
                                 </div>
                             </div>
+
+
                         </div>
                     </div>
                 </div>
+
+
+                <div class="col">
+                    <div class="card h-100 position-relative">
+                        <div class="row h-100">
+
+                            <div class="col-md-6 pe-0">
+                                <a class="text-dark" href="#"></a>
+                                <img
+                                        src="../img/pordonde.jpg"
+                                        class="img-fluid rounded-start img-cover"/>
+                                </a>
+                            </div>
+
+                            <div class="col-md-6 p-3 pe-4">
+                                <a class="text-dark" href="#">
+                                    <div class="fw-bold mb-2 fs-14 card-tele-title">Por donde salgo?</div>
+
+                                    <div class="col-md-6 col-lg-4 col-xl-6 ">
+                                        <div class="mb-2 text-right">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="currentColor" class="bi bi-calendar3" viewBox="0 0 16 16">
+                                                <path d="M14 0H2a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2zM1 3.857C1 3.384 1.448 3 2 3h12c.552 0 1 .384 1 .857v10.286c0 .473-.448.857-1 .857H2c-.552 0-1-.384-1-.857V3.857z"></path>
+                                                <path d="M6.5 7a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm-9 3a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2zm3 0a1 1 0 1 0 0-2 1 1 0 0 0 0 2z"></path>
+                                            </svg>
+                                            :00 pm 10/08/2022
+                                        </div>
+                                        <div class="mb-2 text-right">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="currentColor" class="bi bi-geo-alt-fill" viewBox="0 0 16 16">
+                                                <path d="M8 16s6-5.686 6-10A6 6 0 0 0 2 6c0 4.314 6 10 6 10zm0-7a3 3 0 1 1 0-6 3 3 0 0 1 0 6z"/>
+                                            </svg>
+                                            Teatro Municipal Tacna
+                                        </div>
+                                        <div class="mb-2 text-right">
+                                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16"
+                                                 fill="currentColor" class="bi bi-cash-stack" viewBox="0 0 16 16">
+                                                <path d="M1 3a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1H1zm7 8a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/>
+                                                <path d="M0 5a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H1a1 1 0 0 1-1-1V5zm3 0a2 2 0 0 1-2 2v4a2 2 0 0 1 2 2h10a2 2 0 0 1 2-2V7a2 2 0 0 1-2-2H3z"/>
+                                            </svg>
+                                            S/.41.00
+                                        </div>
+
+                                    </div>
+                                </a>
+
+
+                                <div class="col-md-6 col-lg-4 col-xl-6 ">
+                                    <div class="mb-2 text-right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-ticket-perforated" viewBox="0 0 16 16">
+                                            <path d="M4 4.85v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Zm-7 1.8v.9h1v-.9H4Zm7 0v.9h1v-.9h-1Z"/>
+                                            <path d="M1.5 3A1.5 1.5 0 0 0 0 4.5V6a.5.5 0 0 0 .5.5 1.5 1.5 0 1 1 0 3 .5.5 0 0 0-.5.5v1.5A1.5 1.5 0 0 0 1.5 13h13a1.5 1.5 0 0 0 1.5-1.5V10a.5.5 0 0 0-.5-.5 1.5 1.5 0 0 1 0-3A.5.5 0 0 0 16 6V4.5A1.5 1.5 0 0 0 14.5 3h-13ZM1 4.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 .5.5v1.05a2.5 2.5 0 0 0 0 4.9v1.05a.5.5 0 0 1-.5.5h-13a.5.5 0 0 1-.5-.5v-1.05a2.5 2.5 0 0 0 0-4.9V4.5Z"/>
+                                        </svg>
+                                        # tickets
+                                    </div>
+                                    <div class="mb-2 text-right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-tv" viewBox="0 0 16 16">
+                                            <path d="M2.5 13.5A.5.5 0 0 1 3 13h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zM13.991 3l.024.001a1.46 1.46 0 0 1 .538.143.757.757 0 0 1 .302.254c.067.1.145.277.145.602v5.991l-.001.024a1.464 1.464 0 0 1-.143.538.758.758 0 0 1-.254.302c-.1.067-.277.145-.602.145H2.009l-.024-.001a1.464 1.464 0 0 1-.538-.143.758.758 0 0 1-.302-.254C1.078 10.502 1 10.325 1 10V4.009l.001-.024a1.46 1.46 0 0 1 .143-.538.758.758 0 0 1 .254-.302C1.498 3.078 1.675 3 2 3h11.991zM14 2H2C0 2 0 4 0 4v6c0 2 2 2 2 2h12c2 0 2-2 2-2V4c0-2-2-2-2-2z"/>
+                                        </svg>
+                                        Sala 1
+                                    </div>
+                                    <div class="mb-2 text-right">
+                                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-clock" viewBox="0 0 16 16">
+                                            <path d="M8 3.5a.5.5 0 0 0-1 0V9a.5.5 0 0 0 .252.434l3.5 2a.5.5 0 0 0 .496-.868L8 8.71V3.5z"/>
+                                            <path d="M8 16A8 8 0 1 0 8 0a8 8 0 0 0 0 16zm7-8A7 7 0 1 1 1 8a7 7 0 0 1 14 0z"/>
+                                        </svg>
+                                        90 min
+                                    </div>
+
+                                </div>
+                                </a>
+
+
+                                <div class="text-end">
+                                    <button class="btn btn-redtele">Eliminar</button>
+                                </div>
+                            </div>
+
+
+                        </div>
+                    </div>
+
+
+
+
+
+
+                        </div>
+                    </div>
+                </div>
+
             </div>
+        </div>
+        <!--Fin de contenidos-->
 
 
+        <!-- Footer -->
+        <footer class="bg-dark text-white text-start">
+            <!-- Grid container -->
+            <div class="container p-3">
+                <!-- Section: Social media -->
+                <section class="text-center">
+                    <!-- Facebook -->
+                    <a
+                            class="btn btn-dark btn-floating btn-lg text-white m-1"
+                            href="#!"
+                            role="button"
+                            data-mdb-ripple-color="dark"
+                    ><i class="fab fa-facebook-f"></i
+                    ></a>
 
+                    <!-- Twitter -->
+                    <a
+                            class="btn btn-dark btn-floating btn-lg text-white m-1"
+                            href="#!"
+                            role="button"
+                            data-mdb-ripple-color="dark"
+                    ><i class="fab fa-twitter"></i
+                    ></a>
+
+                    <!-- Instagram -->
+                    <a
+                            class="btn btn-dark btn-floating btn-lg text-white m-1"
+                            href="#!"
+                            role="button"
+                            data-mdb-ripple-color="dark"
+                    ><i class="fab fa-instagram"></i
+                    ></a>
+
+                </section>
+                <!-- Section: Social media -->
+            </div>
+            <!-- Grid container -->
+
+            <!-- Copyright -->
+            <div class="text-start p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+                <div class="container">
+                    © 2022 Teleticket
+                </div>
+            </div>
+            <!-- Copyright -->
+        </footer>
+        <!-- End your project here-->
+
+
+        <!-- MDB -->
+        <script type="text/javascript" src="../js/mdb.min.js"></script>
+        <!-- Custom scripts -->
+        <script type="text/javascript">
+            $(document).ready(function (e) {
+                $('.search-panel .dropdown-menu').find('a').click(function (e) {
+                    e.preventDefault();
+                    var param = $(this).attr("href").replace("#", "");
+                    var concept = $(this).text();
+                    $('.search-panel span#search_concept').text(concept);
+                    $('.input-group #search_param').val(param);
+                });
+            });
+        </script>
     </body>
 </html>
