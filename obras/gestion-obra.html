@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>Material Design for Bootstrap</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b101dc44ce.js" crossorigin="anonymous"></script>
+    <!--JQUery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- MDB -->
+    <link rel="stylesheet" href="../css/mdb.min.css"/>
+    <!--Table-->
+    <link rel="stylesheet" href="../css/tables.css"/>
+
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark fs-14  p-3">
+    <div class="container-fluid container justify-content-between">
+        <!-- Left elements -->
+        <!-- Brand -->
+        <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+            <img
+                    src="../img/logo-teleticket.png"
+                    height="40"
+                    alt="Teleticket logo"
+                    loading="lazy"
+                    style="margin-top: 2px;"
+            />
+        </a>
+
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+            </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="min-width: 50%;">
+                <!-- Search form -->
+                <form class="input-group w-auto my-auto d-flex flex-row search-panel ms-5"
+                      style="min-width: 80%;">
+
+                    <button class="form-control rounded-7 btn-light  fs-14 text-start font-weight-bold"
+                            data-mdb-toggle="dropdown"
+                            style="max-width: fit-content; border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important;">
+                        <span id="search_concept">Obra</span> <span class="caret"></span>
+                    </button>
+
+                    <input type="hidden" name="search_param" value="all" id="search_param">
+                    <input
+                            autocomplete="off"
+                            type="search"
+                            class="form-control rounded-7 fs-14"
+                            placeholder="Buscar en Teleticket"
+                            style="border-top-left-radius: 0 !important; border-bottom-left-radius: 0 !important;"
+                    />
+                    <span class="input-group-text border-0 d-none d-lg-flex">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </form>
+            </ul>
+
+
+            <!-- Right elements -->
+            <ul class="navbar-nav flex-row">
+
+                <!--Usuario-->
+                <li class="nav-item dropdown me-3 me-lg-1 mx-2">
+                    <a class="nav-link d-sm-flex align-items-sm-center dropdown-toggle hidden-arrow"
+                       href="#"
+                       id="navbarDropdownMenuLink"
+                       role="button"
+                       data-mdb-toggle="dropdown"
+                       aria-expanded="false">
+                        <img
+                                src="../img/default-profile.png"
+                                class="rounded-circle"
+                                height="22"
+                                alt="usuario"
+                                loading="lazy"/>
+                        <strong class="d-none d-sm-block ms-1 username">
+                            Operador
+                        </strong>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end fs-13"
+                        aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item text-redtele" href="#">Cerrar sesión</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Fin de Navbar -->
+
+<!-- Headers obra -->
+<div class="container py-2 ">
+    <div class="row row-cols-2 row-cols-md-2 g-2 py-1">
+        <div class="row row-cols-1 row-cols-md-1 g-1 py-2">
+            <div class="title-30 py-6">Antes de decirte adiós</div>
+            <div class="px-2">
+                <button type="button" class="btn btn-danger" data-mdb-color="dark">APT</button>
+                <button type="button" class="btn btn-outline-danger" data-mdb-color="dark">90 min</button>
+            </div>
+        </div>
+        <div class="row row-cols-2 row-cols-md-2 g-2 py-2 justify-content-end">
+            <div></div>
+            <button class="btn btn-redtele" style="height:50px;width:150px">Editar obra</button>
+            <div></div>
+            <button class="btn btn-redtele" style="height:50px;width:150px">Añadir a destacados</button>
+        </div>
+    </div>
+    <h5><b>Director:</b></h5>
+    <h5>Director 1</h5>
+    <h5><b>Reparto:</b></h5>
+    <h5>Actor 1, Actriz 1, Actor 2</h5>
+</div>
+
+<!-- Imágenes -->
+<div class="container py-2">
+    <div class="row row-cols-3 row-cols-md-3 g-3 py-3">
+        <div class="title-30 py-6">Imágenes </div>
+        <div></div>
+        <div class="px-7">
+            <button class="btn btn-redtele" style="height:50px;width:150px">Añadir imagen</button>
+        </div>
+        <div><img src="../img/sanborja2.jpg" class="d-block w-100" alt="Sede San Borja"/></div>
+        <div><img src="../img/sanborja2.jpg" class="d-block w-100" alt="Sede San Borja"/></div>
+        <div><img src="../img/sanborja2.jpg" class="d-block w-100" alt="Sede San Borja"/></div>
+        <div class="row row-cols-2 row-cols-md-2 g-2 py-1">
+            <div></div>
+            <div class="px-4">
+                <button class="btn btn-redtele" style="height:50px;width:150px">Eliminar</button>
+            </div>
+        </div>
+        <div class="row row-cols-2 row-cols-md-2 g-2 py-1">
+            <div></div>
+            <div class="px-5">
+                <button class="btn btn-redtele" style="height:50px;width:150px">Eliminar</button>
+            </div>
+        </div>
+        <div class="row row-cols-2 row-cols-md-2 g-2 py-1">
+            <div></div>
+            <div class="px-5">
+                <button class="btn btn-redtele" style="height:50px;width:150px">Eliminar</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Tabla con info de funciones -->
+<div class="container py-2">
+    <div class="title-26 py-6">Lista de funciones </div>
+    <table class="table table-bordered text-center">
+        <thead>
+        <tr class="bg-black bg-opacity-25">
+            <th scope="col"><b>Sede</b></th>
+            <th scope="col"><b>Fecha y hora</b></th>
+            <th scope="col"><b>Asistencia</b></th>
+            <th scope="col"></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr>
+            <td class="py-4">San Borja</td>
+            <td class="py-4">26/04/2022 17:30</td>
+            <td class="py-4">150 personas</td>
+            <td>
+                <button class="btn btn-redtele">Eliminar</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="py-4">San Isidro</td>
+            <td class="py-4">27/04/2022 18:30</td>
+            <td class="py-4">150 personas</td>
+            <td>
+                <button class="btn btn-redtele">Editar</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="py-4">Miraflores</td>
+            <td class="py-4">28/04/2022 18:00</td>
+            <td class="py-4">250 personas</td>
+            <td>
+                <button class="btn btn-redtele">Editar</button>
+            </td>
+        </tr>
+        <tr>
+            <td class="py-4">Miraflores</td>
+            <td class="py-4">28/04/2022 21:00</td>
+            <td class="py-4">250 personas</td>
+            <td>
+                <button class="btn btn-redtele">Editar</button>
+            </td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+
+</body>
+</html>
