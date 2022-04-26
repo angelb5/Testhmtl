@@ -19200,6 +19200,7 @@ a{
 
 .card-tele-img{
   position: relative;
+  height: 190px;
 }
 
 .card-tele-img img{
@@ -19211,7 +19212,7 @@ a{
   animation: fadeBgEvent 1s infinite;
   transition: 0.4s all ease-in-out;
   max-width: 100%;
-  height: auto;
+  height: 100%;
 }
 
 
