@@ -138,7 +138,7 @@
                         style="margin-top: 2px;"
                 />
             </div>
-            <div class="title-24 mb-3 text-white text-center ">Editar Obra</div>
+            <div class="title-24 mb-3 text-white text-center ">Nueva sede</div>
             <br/>
             <div >
                 <div class="row" style="width: 800px; font-size:15px" >
@@ -147,54 +147,19 @@
                             <div  style="padding-left: 50px; padding-right: 50px" class="w-100" >
                                 <div class="form-outline form-white mb-4">
 
+                                    <div class="form-outline form-white mb-4">
+                                        <input type="text" id="idsedes" class="form-control" />
+                                        <label class="form-label" for="idsedes">Nombre de la sede</label>
+                                    </div>
+                                    <div class="form-outline form-white mb-4">
+                                        <input type="text" id="" class="form-control" />
+                                        <label class="form-label" for="">Dirección</label>
+                                    </div>
 
                                     <div class="form-outline form-white mb-4">
-                                        <input type="text" value="Obra1" id="name" class="form-control" />
-                                        <label class="form-label" for="name">Nombre</label>
+                                        <input type="text" id="" class="form-control" />
+                                        <label class="form-label" for="">Ubicación (coordenadas geográficas)</label>
                                     </div>
-
-                                    <div class="mb-4" >
-                                        <label style="padding-right: 30px" for="inlineFormSelectPref">Directores: </label>
-
-                                        <select style="width: 150px" class="select">
-                                            <option value="2">One</option>
-                                            <option value="3">Two</option>
-                                            <option value="4">Three</option>
-                                            <option value="5">Four</option>
-                                            <option value="6">Five</option>
-                                            <option value="7">Six</option>
-                                            <option value="8">Seven</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="mb-4" >
-                                        <label style="padding-right: 48px" for="inlineFormSelectPref">Actores: </label>
-
-                                        <select style="width: 150px" class="select">
-                                            <option value="2">One</option>
-                                            <option value="3">Two</option>
-                                            <option value="4">Three</option>
-                                            <option value="5">Four</option>
-                                            <option value="6">Five</option>
-                                            <option value="7">Six</option>
-                                            <option value="8">Seven</option>
-                                        </select>
-                                    </div>
-
-                                    <div class="mb-4" >
-                                        <label style="padding-right: 50px" for="inlineFormSelectPref">Género: </label>
-
-                                        <select style="width: 150px" class="select">
-                                            <option value="2">One</option>
-                                            <option value="3">Two</option>
-                                            <option value="4">Three</option>
-                                            <option value="5">Four</option>
-                                            <option value="6">Five</option>
-                                            <option value="7">Six</option>
-                                            <option value="8">Seven</option>
-                                        </select>
-                                    </div>
-
                                 </div>
                                 <br/>
                             </div>
@@ -225,44 +190,17 @@
                                 <div class="form-outline form-white mb-4">
                                     <br/>
                                     <div class="mb-4" >
-                                        <label style="padding-right: 1px" >Clasificación:</label>
-
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1" />
-                                            <label class="form-check-label" for="inlineRadio1">APT</label>
-                                        </div>
-
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2" />
-                                            <label class="form-check-label" for="inlineRadio2">M13</label>
-                                        </div>
-
-                                        <div class="form-check form-check-inline">
-                                            <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio3" value="option3" />
-                                            <label class="form-check-label" for="inlineRadio3">M18</label>
-                                        </div>
-                                    </div>
-
-                                    <div class="row">
-                                        <div class="col">
-                                            <div class="form-outline form-white mb-4">
-                                                <input value="180" type="number" id="duracion" class="form-control" />
-                                                <label class="form-label" for="duracion">Duración</label>
-                                            </div>
-                                        </div>
-                                        <div style="padding-left: 20px; width: 100px" class="col">
-                                        </div>
-
-                                    </div>
-
-                                    <div class="mb-4" >
                                         <label style="padding-right: 230px" >Añadir foto:</label>
+                                        <br/>
                                         <form name="subida-imagenes" type="POST" enctype="multipart/formdata" >
+                                            <br/>
                                             <img
-                                                    src="../img/japan.jpg"
+
+                                                    src="../img/icon-picture.jpg"
                                                     height="120"
                                                     alt="foto"
                                                     loading="lazy"/>
+                                            <br/><br/>
                                             <input type="file" name="imagen1" />
                                         </form>
 
