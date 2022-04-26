@@ -200,6 +200,69 @@
             </div>
 
 
+            <!-- Footer -->
+            <footer class="bg-dark text-white text-start my-5 ">
+                <!-- Grid container -->
+                <div class="container p-3">
+                    <!-- Section: Social media -->
+                    <section class="text-center" >
+                        <!-- Facebook -->
+                        <a
+                                class="btn btn-dark btn-floating btn-lg text-white m-1"
+                                href="#!"
+                                role="button"
+                                data-mdb-ripple-color="dark"
+                        ><i class="fab fa-facebook-f"></i
+                        ></a>
 
+                        <!-- Twitter -->
+                        <a
+                                class="btn btn-dark btn-floating btn-lg text-white m-1"
+                                href="#!"
+                                role="button"
+                                data-mdb-ripple-color="dark"
+                        ><i class="fab fa-twitter"></i
+                        ></a>
+
+                        <!-- Instagram -->
+                        <a
+                                class="btn btn-dark btn-floating btn-lg text-white m-1"
+                                href="#!"
+                                role="button"
+                                data-mdb-ripple-color="dark"
+                        ><i class="fab fa-instagram"></i
+                        ></a>
+
+                    </section>
+                    <!-- Section: Social media -->
+                </div>
+                <!-- Grid container -->
+
+                <!-- Copyright -->
+                <div class="text-start my-5" style="background-color: rgba(0, 0, 0, 0.2);">
+                    <div class="container">
+                        © 2022 Teleticket
+                    </div>
+                </div>
+                <!-- Copyright -->
+            </footer>
+            <!-- End your project here-->
+
+
+
+            <!-- MDB -->
+            <script type="text/javascript" src="../js/mdb.min.js"></script>
+            <!-- Custom scripts -->
+            <script type="text/javascript">
+                $(document).ready(function(e){
+                    $('.search-panel .dropdown-menu').find('a').click(function(e) {
+                        e.preventDefault();
+                        var param = $(this).attr("href").replace("#","");
+                        var concept = $(this).text();
+                        $('.search-panel span#search_concept').text(concept);
+                        $('.input-group #search_param').val(param);
+                    });
+                });
+            </script>
     </body>
 </html>
