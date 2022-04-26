@@ -28,8 +28,22 @@
     border-bottom: 1px solid #dddddd;
 }
 
+.hover-light tbody tr:nth-of-type(even):hover {
+    background-color: #ebeadd;
+}
+.hover-light tbody tr:nth-of-type(odd):hover {
+    background-color: #ebeadd;
+}
+
+.hover tbody tr:nth-of-type(even):hover {
+    background-color: lightgray;
+}
+.hover tbody tr:nth-of-type(odd):hover {
+    background-color: lightgray;
+}
+
 .content-table tbody tr:nth-of-type(even) {
-    background-color: #f3f3f3;
+    background-color: #f6f6f6;
 }
 
 .content-table tbody tr:last-of-type {
