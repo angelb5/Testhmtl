@@ -1,10 +1,264 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Title</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta http-equiv="x-ua-compatible" content="ie=edge" />
+    <title>Material Design for Bootstrap</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b101dc44ce.js" crossorigin="anonymous"></script>
+    <!--JQUery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- MDB -->
+    <link rel="stylesheet" href="../css/mdb.min.css" />
 </head>
 <body>
+<!-- Start your project here-->
 
+<!-- Navbar-->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark fs-14  p-3">
+    <div class="container-fluid container justify-content-between">
+        <!-- Left elements -->
+        <!-- Brand -->
+        <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+            <img
+                    src="../img/logo-teleticket.png"
+                    height="40"
+                    alt="Teleticket logo"
+                    loading="lazy"
+                    style="margin-top: 2px;"
+            />
+        </a>
+
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse" data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <!-- Dropdown -->
+                <li class="nav-item dropdown mx-2">
+                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button" data-mdb-toggle="dropdown" aria-expanded="false">
+                        <strong>
+                            <i class="fa-solid fa-bars mx-1"></i>
+                            Menú
+                        </strong>
+                    </a>
+                    <!-- Dropdown menu -->
+                    <ul class="dropdown-menu-dark dropdown-menu font-weight-bold" aria-labelledby="navbarDropdown">
+                        <li>
+                            <a class="dropdown-item" href="#">Obras</a>
+                        </li>
+                        <li>
+                            <a class="dropdown-item" href="#">Personas</a>
+                        </li>
+
+                        <li>
+                            <a class="dropdown-item" href="#">Sedes</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="min-width: 50%;">
+                <!-- Search form -->
+                <form class="input-group w-auto my-auto d-flex flex-row search-panel ms-5"
+                      style="min-width: 80%;">
+
+                    <button class="form-control rounded-7 btn-light dropdown-toggle fs-14 text-start font-weight-bold" data-mdb-toggle="dropdown"
+                            style="max-width: fit-content; border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important;">
+                        <span id="search_concept">Todo</span> <span class="caret"></span>
+                    </button>
+                    <ul class="dropdown-menu" role="menu">
+                        <li><a class="dropdown-item" href="#todo">Todo</a></li>
+                        <li><a class="dropdown-item" href="#obras">Obras</a></li>
+                        <li><a class="dropdown-item" href="#personas">Personas</a></li>
+                        <li><a class="dropdown-item" href="#sedes">Sedes</a></li>
+                    </ul>
+                    <input type="hidden" name="search_param" value="all" id="search_param">
+                    <input
+                            autocomplete="off"
+                            type="search"
+                            class="form-control rounded-7 fs-14"
+                            placeholder="Buscar en Teleticket"
+                            style="border-top-left-radius: 0 !important; border-bottom-left-radius: 0 !important;"
+                    />
+                    <span class="input-group-text border-0 d-none d-lg-flex">
+                        <i class="fas fa-search"></i>
+                    </span>
+                </form>
+            </ul>
+
+
+
+            <!-- Right elements -->
+            <ul class="navbar-nav flex-row">
+
+                <!--Usuario-->
+                <li class="nav-item dropdown me-3 me-lg-1 mx-2">
+                    <a class="nav-link d-sm-flex align-items-sm-center dropdown-toggle hidden-arrow"
+                       href="#"
+                       id="navbarDropdownMenuLink"
+                       role="button"
+                       data-mdb-toggle="dropdown"
+                       aria-expanded="false">
+                        <img
+                                src="../img/default-profile.png"
+                                class="rounded-circle"
+                                height="22"
+                                alt="usuario"
+                                loading="lazy"/>
+                        <strong class="d-none d-sm-block ms-1 username">
+                            Admin
+                        </strong>
+                    </a>
+
+                </li>
+
+            </ul>
+</nav>
+<!-- Fin de Navbar -->
+
+
+<div class="container py-5" style="display:flex;justify-content:center;align-items:center;">
+    <div class="p-4 bg-dark text-white rounded-7" >
+        <form autocomplete="off">
+            <!-- Stack the columns on mobile by making one full-width and the other half-width -->
+            <div class=" title-24 mb-3 text-white text-center " href="#">
+                <img
+                        src="../img/logo-teleticket.png"
+                        height="60"
+                        alt="Teleticket logo"
+                        loading="lazy"
+                        style="margin-top: 2px;"
+                />
+            </div>
+            <div class="title-24 mb-3 text-white text-center ">Nueva sala</div>
+            <br/>
+            <div >
+                <div class="row" style="width: 800px; font-size:15px" >
+                    <div class="col">
+                        <div class=" text-center mb-4 align-items-center d-flex" style="min-width: 200px;">
+                            <div  style="padding-left: 50px; padding-right: 50px" class="w-100" >
+                                <div class="form-outline form-white mb-4">
+
+                                    <div class="form-outline form-white mb-4">
+                                        <input type="text" id="" class="form-control" />
+                                        <label class="form-label" for="">Número de la sala</label>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="form-outline form-white mb-4">
+                                                <input type="number" id="aforo" class="form-control" />
+                                                <label class="form-label" for="aforo">Aforo</label>
+
+
+                                            </div>
+                                        </div>
+                                        <div style="padding-left: 20px; width: 100px" class="col">
+
+                                            <p style="color: red">* máx 128 </p>
+                                        </div>
+
+                                    </div>
+
+                                </div>
+                                <br/>
+                            </div>
+                        </div>
+                        <div >
+                            <div >
+
+                                <div class="row" style="padding-left: 50px; width: 400px" >
+                                    <div class="col">
+                                        <button class="btn btn-dark mb-4" >Cancelar</button>
+                                    </div>
+                                    <div class="col">
+                                        <button type="submit"  class="btn btn-danger mb-4" >Crear</button>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </form>
+    </div>
+</div>
+
+<!-- Footer -->
+<footer class="bg-dark text-white text-start">
+    <!-- Grid container -->
+    <div class="container p-3">
+        <!-- Section: Social media -->
+        <section class="text-center" >
+            <!-- Facebook -->
+            <a
+                    class="btn btn-dark btn-floating btn-lg text-white m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+            ><i class="fab fa-facebook-f"></i
+            ></a>
+
+            <!-- Twitter -->
+            <a
+                    class="btn btn-dark btn-floating btn-lg text-white m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+            ><i class="fab fa-twitter"></i
+            ></a>
+
+            <!-- Instagram -->
+            <a
+                    class="btn btn-dark btn-floating btn-lg text-white m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"></i
+            ></a>
+
+        </section>
+        <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-start p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="container">
+            © 2022 Teleticket
+        </div>
+    </div>
+    <!-- Copyright -->
+</footer>
+<!-- End your project here-->
+
+
+
+<!-- MDB -->
+<script type="text/javascript" src="../js/mdb.min.js"></script>
+<!-- Custom scripts -->
+<script type="text/javascript">
+    $(document).ready(function(e){
+        $('.search-panel .dropdown-menu').find('a').click(function(e) {
+            e.preventDefault();
+            var param = $(this).attr("href").replace("#","");
+            var concept = $(this).text();
+            $('.search-panel span#search_concept').text(concept);
+            $('.input-group #search_param').val(param);
+        });
+    });
+</script>
 </body>
 </html>
