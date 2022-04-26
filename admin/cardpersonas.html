@@ -15,8 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
     <!-- MDB -->
     <link rel="stylesheet" href="../css/mdb.min.css"/>
-    <!-- Cards format-->
-    <link rel="stylesheet" href="../css/cards.css"/>
+
 </head>
 <body>
 <!-- Start your project here-->
@@ -46,46 +45,18 @@
         <!-- Collapsible wrapper -->
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mb-2 mb-lg-0">
-                <!-- Dropdown -->
-                <li class="nav-item dropdown mx-2">
-                    <a class="nav-link dropdown-toggle " href="#" id="navbarDropdown" role="button"
-                       data-mdb-toggle="dropdown" aria-expanded="false">
-                        <strong>
-                            <i class="fa-solid fa-bars mx-1"></i>
-                            Menú
-                        </strong>
-                    </a>
-                    <!-- Dropdown menu -->
-                    <ul class="dropdown-menu-dark dropdown-menu font-weight-bold" aria-labelledby="navbarDropdown">
-                        <li>
-                            <a class="dropdown-item" href="#">Obras</a>
-                        </li>
-                        <li>
-                            <a class="dropdown-item" href="#">Personas</a>
-                        </li>
-
-                        <li>
-                            <a class="dropdown-item" href="#">Sedes</a>
-                        </li>
-                    </ul>
-                </li>
             </ul>
             <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="min-width: 50%;">
                 <!-- Search form -->
                 <form class="input-group w-auto my-auto d-flex flex-row search-panel ms-5"
                       style="min-width: 80%;">
 
-                    <button class="form-control rounded-7 btn-light dropdown-toggle fs-14 text-start font-weight-bold"
+                    <button class="form-control rounded-7 btn-light  fs-14 text-start font-weight-bold"
                             data-mdb-toggle="dropdown"
                             style="max-width: fit-content; border-top-right-radius: 0 !important; border-bottom-right-radius: 0 !important;">
                         <span id="search_concept">Personas</span> <span class="caret"></span>
                     </button>
-                    <ul class="dropdown-menu" role="menu">
-                        <li><a class="dropdown-item" href="#todo">Todo</a></li>
-                        <li><a class="dropdown-item" href="#obras">Obras</a></li>
-                        <li><a class="dropdown-item" href="#personas">Personas</a></li>
-                        <li><a class="dropdown-item" href="#sedes">Sedes</a></li>
-                    </ul>
+
                     <input type="hidden" name="search_param" value="all" id="search_param">
                     <input
                             autocomplete="off"
@@ -103,21 +74,7 @@
 
             <!-- Right elements -->
             <ul class="navbar-nav flex-row">
-                <!--Carrito-->
-                <li class="nav-item me-3 me-lg-1 mx-2">
-                    <a class="nav-link" href="#">
-                        <i class="fas fa-solid fa-cart-shopping fa-lg"></i>
 
-                        <span class="badge rounded-pill badge-notification bg-danger">0</span>
-                    </a>
-                </li>
-                <!--Mis tickets-->
-                <li class="nav-item mx-2">
-                    <a class="nav-link" href="#">
-                        <i class="fa-solid fa-ticket mx-1"></i>
-                        Mis tickets
-                    </a>
-                </li>
                 <!--Usuario-->
                 <li class="nav-item dropdown me-3 me-lg-1 mx-2">
                     <a class="nav-link d-sm-flex align-items-sm-center dropdown-toggle hidden-arrow"
@@ -133,17 +90,11 @@
                                 alt="usuario"
                                 loading="lazy"/>
                         <strong class="d-none d-sm-block ms-1 username">
-                            Usuario
+                            Admin
                         </strong>
                     </a>
                     <ul class="dropdown-menu dropdown-menu-end fs-13"
                         aria-labelledby="navbarDropdownMenuLink">
-                        <li>
-                            <a class="dropdown-item" href="#">Editar información</a>
-                        </li>
-                        <li>
-                            <hr class="dropdown-divider"/>
-                        </li>
                         <li>
                             <a class="dropdown-item text-redtele" href="#">Cerrar sesión</a>
                         </li>
@@ -562,12 +513,10 @@
 
     </nav>
 
-    </div>
-
+</div>
 
 
 </div>
-
 
 
 <!--Footer-->

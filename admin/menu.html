@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+    <meta http-equiv="x-ua-compatible" content="ie=edge"/>
+    <title>Material Design for Bootstrap</title>
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/b101dc44ce.js" crossorigin="anonymous"></script>
+    <!--JQUery-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600&display=swap" rel="stylesheet">
+    <!-- MDB -->
+    <link rel="stylesheet" href="../css/mdb.min.css"/>
+</head>
+<body>
+<!-- Start your project here-->
+
+<!-- Navbar-->
+<nav class="navbar navbar-expand-lg bg-dark navbar-dark fs-14  p-3">
+    <div class="container-fluid container justify-content-between">
+        <!-- Left elements -->
+        <!-- Brand -->
+        <a class="navbar-brand me-2 mb-1 d-flex align-items-center" href="#">
+            <img
+                    src="../img/logo-teleticket.png"
+                    height="40"
+                    alt="Teleticket logo"
+                    loading="lazy"
+                    style="margin-top: 2px;"
+            />
+        </a>
+
+        <!-- Toggle button -->
+        <button class="navbar-toggler" type="button" data-mdb-toggle="collapse"
+                data-mdb-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+            <i class="fas fa-bars"></i>
+        </button>
+
+        <!-- Collapsible wrapper -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mb-2 mb-lg-0">
+                <!-- Dropdown -->
+
+            </ul>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0" style="min-width: 50%;">
+                <!-- Search form -->
+            </ul>
+            <!-- Right elements -->
+            <ul class="navbar-nav flex-row">
+                <!--Usuario-->
+                <li class="nav-item dropdown me-3 me-lg-1 mx-2">
+                    <a class="nav-link d-sm-flex align-items-sm-center dropdown-toggle hidden-arrow"
+                       href="#"
+                       id="navbarDropdownMenuLink"
+                       role="button"
+                       data-mdb-toggle="dropdown"
+                       aria-expanded="false">
+                        <img
+                                src="../img/default-profile.png"
+                                class="rounded-circle"
+                                height="22"
+                                alt="usuario"
+                                loading="lazy"/>
+                        <strong class="d-none d-sm-block ms-1 username">
+                            Admin23
+                        </strong>
+                    </a>
+                    <ul class="dropdown-menu dropdown-menu-end fs-13"
+                        aria-labelledby="navbarDropdownMenuLink">
+                        <li>
+                            <a class="dropdown-item text-redtele" href="#">Cerrar sesión</a>
+                        </li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+<!-- Fin de Navbar -->
+<!--Contenidos-->
+<div class="container justify-content-center">
+    <!--Primera fila-->
+    <div class="row row-cols-md-3 py-4">
+        <!--boton1-->
+        <div class="column">
+            <button class="btn btn-redtele" style="width: 360px; height: 160px;">
+                <div class="row py-2">
+                    <div class="col-md-2 align-content-center">
+                        <i class="fas fa-edit"
+                           style="font-size: 40px">
+                        </i>
+                    </div>
+                    <div class="col-md-10" style="font-size: 25px">
+                        Gestión de sedes
+                    </div>
+                </div>
+            </button>
+        </div>
+        <!--boton2-->
+        <div class="column">
+            <button class="btn btn-redtele" style="width: 360px; height: 160px;">
+                <div class="row py-2">
+                    <div class="col-md-2 align-content-center">
+                        <i class="fas fa-edit py-3"
+                           style="font-size: 40px">
+                        </i>
+                    </div>
+                    <div class="col-md-10" style="font-size: 25px">
+                        Gestión de operadores
+                    </div>
+                </div>
+            </button>
+        </div>
+        <!--boton3-->
+        <div class="column">
+            <button class="btn btn-redtele" style="width: 360px; height: 160px;">
+                <div class="row py-2">
+                    <div class="col-md-2 align-content-center">
+                        <i class="fas fa-edit py-4"
+                           style="font-size: 40px">
+                        </i>
+                    </div>
+                    <div class="col-md-10" style="font-size: 25px">
+                        Gestión de actores y directores
+                    </div>
+                </div>
+            </button>
+        </div>
+    </div>
+    <!--Segunda fila-->
+    <div class="container">
+        <div style="margin: 0;position: absolute;left: 50% ;-ms-transform: translateX(-50%);transform: translateX(-50%);" >
+        <button class="btn btn-redtele" style="width: 540px; height: 160px;">
+            <div class="row py-2">
+                <div class="col-md-2 align-content-center">
+                    <i class="fas fa-users py-4"
+                       style="font-size: 40px">
+                    </i>
+                </div>
+                <div class="col-md-10 py-4" style="font-size: 25px">
+                    Listado de clientes
+                </div>
+            </div>
+        </button>
+        </div>
+    </div>
+
+
+</div>
+
+
+<!--Footer-->
+<footer class="bg-dark text-white text-start">
+    <!-- Grid container -->
+    <div class="container p-3">
+        <!-- Section: Social media -->
+        <section class="text-center">
+            <!-- Facebook -->
+            <a
+                    class="btn btn-dark btn-floating btn-lg text-white m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+            ><i class="fab fa-facebook-f"></i
+            ></a>
+
+            <!-- Twitter -->
+            <a
+                    class="btn btn-dark btn-floating btn-lg text-white m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+            ><i class="fab fa-twitter"></i
+            ></a>
+
+            <!-- Instagram -->
+            <a
+                    class="btn btn-dark btn-floating btn-lg text-white m-1"
+                    href="#!"
+                    role="button"
+                    data-mdb-ripple-color="dark"
+            ><i class="fab fa-instagram"></i
+            ></a>
+
+        </section>
+        <!-- Section: Social media -->
+    </div>
+    <!-- Grid container -->
+
+    <!-- Copyright -->
+    <div class="text-start p-2" style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="container">
+            © 2022 Teleticket
+        </div>
+    </div>
+    <!-- Copyright -->
+</footer>
+</div>
+<!--Fin de contenidos-->
+<!-- Modal -->
+
+<!-- End your project here-->
+
+
+<!-- MDB -->
+<script type="text/javascript" src="../js/mdb.min.js"></script>
+<!-- Custom scripts -->
+
+
+</script>
+</body>
+</html>
