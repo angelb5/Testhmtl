@@ -164,51 +164,256 @@
 
 <!-- Tabla con info de funciones -->
 <div class="container py-2">
-    <div class="title-26 py-6">Lista de funciones </div>
-    <table class="table table-bordered text-center">
-        <thead>
-        <tr class="bg-black bg-opacity-25">
-            <th scope="col"><b>Sede</b></th>
-            <th scope="col"><b>Fecha y hora</b></th>
-            <th scope="col"><b>Asistencia</b></th>
-            <th scope="col"></th>
+    <div class="title-26 py-6">
+        Lista de funciones
+        <div class="row" style="font-size: 15px; text-align: right">
+            <div class="col-md-4"></div>
+            <div class="col-md-2" >
+                Año&nbsp;&nbsp;
+            </div>
+            <div class="col-md-3" >
+                Mes&nbsp;&nbsp;
+            </div>
+            <div class="col-md-3">
+                Sede&nbsp;&nbsp;
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4"></div>
+            <div class="col-md-2">
+                <div class="input-group">
+                    <select class="form-select fs-13" aria-label="Default select example" >
+                        <option value="1">Todo</option>
+                        <option value="2">2018</option>
+                        <option value="3">2019</option>
+                        <option value="3">2020</option>
+                        <option value="3">2021</option>
+                        <option value="3">2022</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="input-group">
+                    <select class="form-select fs-13" aria-label="Default select example" >
+                        <option value="1">Todo</option>
+                        <option value="2">Enero</option>
+                        <option value="3">Febrero</option>
+                        <option value="3">Agosto</option>
+                        <option value="3">Septiembre</option>
+                        <option value="3">Octubre</option>
+                        <option value="3">Noviembre</option>
+                        <option value="3">Diciembre</option>
+                    </select>
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="input-group">
+                    <select class="form-select fs-13" aria-label="Default select example" >
+                        <option value="1">Todo</option>
+                        <option value="2">Miraflores</option>
+                        <option value="3">Pueblo Libre</option>
+                    </select>
+                </div>
+            </div>
+        </div>
+    </div>
+    <table class="table hover-light align-middle mb-0  round-border text-center">
+        <thead class="bg-light">
+        <tr class="bg-dark">
+            <th class="text-white fw-bold">Sede</th>
+            <th class="text-white fw-bold">Fecha</th>
+            <th class="text-white fw-bold">Hora</th>
+            <th class="text-white fw-bold " >Asistencia(%)</th>
+            <th class="text-white fw-bold">Estado</th>
+            <th class="text-white fw-bold">Acciones</th>
         </tr>
         </thead>
         <tbody>
         <tr>
-            <td class="py-4">San Borja</td>
-            <td class="py-4">26/04/2022 17:30</td>
-            <td class="py-4">150 personas</td>
             <td>
-                <button class="btn btn-redtele">Eliminar</button>
+                Miraflores
+            </td>
+            <td>
+                27/11/2022
+            </td>
+            <td>
+                16:30
+            </td>
+            <td style="text-align: center;">
+                76
+            </td>
+            <td>
+                <span class="badge badge-success rounded-pill d-inline" style="font-size: 13px">Vigente</span>
+            </td>
+            <td>
+                <button type="button" class="btn btn-outline-primary fw-bold btn-sm btn-rounded"
+                        data-mdb-ripple-color="dark">
+                    Editar
+                </button>
+                <button hidden type="button" class="btn btn-outline-danger fw-bold btn-sm btn-rounded"
+                        data-mdb-ripple-color="dark">
+                    Eliminar
+                </button>
+                <button type="button" style="width: 130px;margin-top: 10px"
+                        class="btn btn-outline-success fw-bold btn-sm btn-rounded" data-mdb-ripple-color="dark">
+                    Reporte xsl
+                </button>
             </td>
         </tr>
         <tr>
-            <td class="py-4">San Isidro</td>
-            <td class="py-4">27/04/2022 18:30</td>
-            <td class="py-4">150 personas</td>
             <td>
-                <button class="btn btn-redtele">Editar</button>
+                Miraflores
+            </td>
+            <td>
+                25/11/2022
+            </td>
+            <td>
+                14:30
+            </td>
+            <td style="text-align: center;">
+                <span class="badge badge-secondary rounded-pill d-inline" style="font-size: 13px">No publicada</span>
+            </td>
+            <td>
+                <span class="badge badge-danger rounded-pill d-inline" style="font-size: 13px">Cancelada</span>
+            </td>
+            <td>
+                <button hidden type="button" class="btn btn-outline-primary fw-bold btn-sm btn-rounded"
+                        data-mdb-ripple-color="dark">
+                    Editar
+                </button>
+                <button hidden type="button" class="btn btn-outline-danger fw-bold btn-sm btn-rounded"
+                        data-mdb-ripple-color="dark">
+                    Eliminar
+                </button>
+                <button hidden type="button" style="width: 140px;margin-top: 10px"
+                        class="btn btn-outline-success fw-bold btn-sm btn-rounded" data-mdb-ripple-color="dark">
+                    Reporte xsl
+                </button>
             </td>
         </tr>
         <tr>
-            <td class="py-4">Miraflores</td>
-            <td class="py-4">28/04/2022 18:00</td>
-            <td class="py-4">250 personas</td>
             <td>
-                <button class="btn btn-redtele">Editar</button>
+                Pueblo Libre
+            </td>
+            <td>
+                24/11/2022
+            </td>
+            <td>
+                17:30
+            </td>
+            <td style="text-align: center;">
+                56
+            </td>
+            <td>
+                <span class="badge badge-success rounded-pill d-inline" style="font-size: 13px">Vigente</span>
+            </td>
+            <td>
+                <button type="button" class="btn btn-outline-primary fw-bold btn-sm btn-rounded"
+                        data-mdb-ripple-color="dark">
+                    Editar
+                </button>
+                <button hidden type="button" class="btn btn-outline-danger fw-bold btn-sm btn-rounded"
+                        data-mdb-ripple-color="dark">
+                    Eliminar
+                </button>
+                <button type="button" style="width: 140px;margin-top: 10px"
+                        class="btn btn-outline-success fw-bold btn-sm btn-rounded" data-mdb-ripple-color="dark">
+                    Reporte xsl
+                </button>
             </td>
         </tr>
         <tr>
-            <td class="py-4">Miraflores</td>
-            <td class="py-4">28/04/2022 21:00</td>
-            <td class="py-4">250 personas</td>
             <td>
-                <button class="btn btn-redtele">Editar</button>
+                Pueblo Libre
+            </td>
+            <td>
+                24/11/2022
+            </td>
+            <td>
+                09:30
+            </td>
+            <td style="text-align: center;">
+                70
+            </td>
+            <td>
+                <span class="badge badge-info rounded-pill d-inline" style="font-size: 13px">Realizada</span>
+            </td>
+            <td>
+                <button hidden type="button" class="btn btn-outline-primary fw-bold btn-sm btn-rounded"
+                        data-mdb-ripple-color="dark">
+                    Editar
+                </button>
+                <button hidden type="button" class="btn btn-outline-danger fw-bold btn-sm btn-rounded"
+                        data-mdb-ripple-color="dark">
+                    Eliminar
+                </button>
+                <button type="button" style="width: 140px;margin-top: 0px"
+                        class="btn btn-outline-success fw-bold btn-sm btn-rounded" data-mdb-ripple-color="dark">
+                    Reporte xsl
+                </button>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                Pueblo Libre
+            </td>
+            <td>
+                23/11/2022
+            </td>
+            <td>
+                15:30
+            </td>
+            <td style="text-align: center;">
+                67
+            </td>
+            <td>
+                <span class="badge badge-info rounded-pill d-inline" style="font-size: 13px">Realizada</span>
+            </td>
+            <td>
+                <button hidden type="button" class="btn btn-outline-primary fw-bold btn-sm btn-rounded"
+                        data-mdb-ripple-color="dark">
+                    Editar
+                </button>
+                <button hidden type="button" class="btn btn-outline-danger fw-bold btn-sm btn-rounded"
+                        data-mdb-ripple-color="dark">
+                    Eliminar
+                </button>
+                <button type="button" style="width: 140px;margin-top: 0px"
+                        class="btn btn-outline-success fw-bold btn-sm btn-rounded" data-mdb-ripple-color="dark">
+                    Reporte xsl
+                </button>
             </td>
         </tr>
         </tbody>
     </table>
+    <!--Paginacion-->
+    <nav aria-label="..." class="py-2 justify-content-center">
+        <div style="text-align: -webkit-center;">
+            <ul class="pagination shadow-1-soft rounded-2" style="width: fit-content;">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                    </a>
+                </li>
+                <li class="page-item active">
+                    <a class="page-link" href="#">1</a>
+                </li>
+                <li class="page-item " aria-current="page">
+                    <a class="page-link" href="#">
+                        2 <span class="visually-hidden">(current)</span>
+                    </a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#">3</a>
+                </li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 </div>
 
 
